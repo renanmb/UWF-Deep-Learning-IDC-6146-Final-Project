@@ -1,0 +1,1334 @@
+@article{terven2023comprehensive,
+  title={A comprehensive review of yolo architectures in computer vision: From yolov1 to yolov8 and yolo-nas},
+  author={Terven, Juan and C{\'o}rdova-Esparza, Diana-Margarita and Romero-Gonz{\'a}lez, Julio-Alejandro},
+  journal={Machine Learning and Knowledge Extraction},
+  volume={5},
+  number={4},
+  pages={1680--1716},
+  year={2023},
+  publisher={MDPI}
+}
+
+@INPROCEEDINGS{6909475,
+author={Girshick, Ross and Donahue, Jeff and Darrell, Trevor and Malik, Jitendra},
+booktitle={2014 IEEE Conference on Computer Vision and Pattern Recognition}, 
+title={Rich Feature Hierarchies for Accurate Object Detection and Semantic Segmentation}, 
+year={2014},
+volume={},
+number={},
+pages={580-587},
+keywords={Proposals;Feature extraction;Training;Visualization;Object detection;Vectors;Support vector machines},
+doi={10.1109/CVPR.2014.81}}
+
+@INPROCEEDINGS{7410526,
+author={Girshick, Ross},
+booktitle={2015 IEEE International Conference on Computer Vision (ICCV)}, 
+title={Fast R-CNN}, 
+year={2015},
+volume={},
+number={},
+pages={1440-1448},
+keywords={Training;Proposals;Feature extraction;Object detection;Pipelines;Computer architecture;Open source software},
+doi={10.1109/ICCV.2015.169}}
+
+@inproceedings{faster_RCNN,
+author = {Ren, Shaoqing and He, Kaiming and Girshick, Ross and Sun, Jian},
+title = {Faster R-CNN: towards real-time object detection with region proposal networks},
+year = {2015},
+publisher = {MIT Press},
+address = {Cambridge, MA, USA},
+abstract = {State-of-the-art object detection networks depend on region proposal algorithms to hypothesize object locations. Advances like SPPnet [7] and Fast R-CNN [5] have reduced the running time of these detection networks, exposing region proposal computation as a bottleneck. In this work, we introduce a Region Proposal Network (RPN) that shares full-image convolutional features with the detection network, thus enabling nearly cost-free region proposals. An RPN is a fully-convolutional network that simultaneously predicts object bounds and objectness scores at each position. RPNs are trained end-to-end to generate high-quality region proposals, which are used by Fast R-CNN for detection. With a simple alternating optimization, RPN and Fast R-CNN can be trained to share convolutional features. For the very deep VGG-16 model [19], our detection system has a frame rate of 5fps (including all steps) on a GPU, while achieving state-of-the-art object detection accuracy on PASCAL VOC 2007 (73.2\% mAP) and 2012 (70.4\% mAP) using 300 proposals per image. Code is available at https://github.com/ShaoqingRen/faster_rcnn.},
+booktitle = {Proceedings of the 28th International Conference on Neural Information Processing Systems - Volume 1},
+pages = {91–99},
+numpages = {9},
+location = {Montreal, Canada},
+series = {NIPS'15}
+}
+
+@InProceedings{10.1007/978-3-319-46448-0_2,
+author="Liu, Wei
+and Anguelov, Dragomir
+and Erhan, Dumitru
+and Szegedy, Christian
+and Reed, Scott
+and Fu, Cheng-Yang
+and Berg, Alexander C.",
+editor="Leibe, Bastian
+and Matas, Jiri
+and Sebe, Nicu
+and Welling, Max",
+title="SSD: Single Shot MultiBox Detector",
+booktitle="Computer Vision -- ECCV 2016",
+year="2016",
+publisher="Springer International Publishing",
+address="Cham",
+pages="21--37",
+abstract="We present a method for detecting objects in images using a single deep neural network. Our approach, named SSD, discretizes the output space of bounding boxes into a set of default boxes over different aspect ratios and scales per feature map location. At prediction time, the network generates scores for the presence of each object category in each default box and produces adjustments to the box to better match the object shape. Additionally, the network combines predictions from multiple feature maps with different resolutions to naturally handle objects of various sizes. SSD is simple relative to methods that require object proposals because it completely eliminates proposal generation and subsequent pixel or feature resampling stages and encapsulates all computation in a single network. This makes SSD easy to train and straightforward to integrate into systems that require a detection component. Experimental results on the PASCAL VOC, COCO, and ILSVRC datasets confirm that SSD has competitive accuracy to methods that utilize an additional object proposal step and is much faster, while providing a unified framework for both training and inference. For {\$}{\$}300 {\backslash}times 300{\$}{\$}300{\texttimes}300input, SSD achieves 74.3 {\%} mAP on VOC2007 test at 59 FPS on a Nvidia Titan X and for {\$}{\$}512 {\backslash}times 512{\$}{\$}512{\texttimes}512input, SSD achieves 76.9 {\%} mAP, outperforming a comparable state of the art Faster R-CNN model. Compared to other single stage methods, SSD has much better accuracy even with a smaller input image size. Code is available at https://github.com/weiliu89/caffe/tree/ssd.",
+isbn="978-3-319-46448-0"
+}
+
+@INPROCEEDINGS{8237584,
+author={He, Kaiming and Gkioxari, Georgia and Dollár, Piotr and Girshick, Ross},
+booktitle={2017 IEEE International Conference on Computer Vision (ICCV)}, 
+title={Mask R-CNN}, 
+year={2017},
+volume={},
+number={},
+pages={2980-2988},
+keywords={Feature extraction;Image segmentation;Object detection;Semantics;Quantization (signal);Robustness},
+doi={10.1109/ICCV.2017.322}}
+
+@ARTICLE{8417976,
+author={Lin, Tsung-Yi and Goyal, Priya and Girshick, Ross and He, Kaiming and Dollár, Piotr},
+journal={IEEE Transactions on Pattern Analysis and Machine Intelligence}, 
+title={Focal Loss for Dense Object Detection}, 
+year={2020},
+volume={42},
+number={2},
+pages={318-327},
+keywords={Detectors;Training;Object detection;Entropy;Proposals;Convolutional neural networks;Feature extraction;Computer vision;object detection;machine learning;convolutional neural networks},
+doi={10.1109/TPAMI.2018.2858826}}
+
+@INPROCEEDINGS{9156454,
+author={Tan, Mingxing and Pang, Ruoming and Le, Quoc V.},
+booktitle={2020 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)}, 
+title={EfficientDet: Scalable and Efficient Object Detection}, 
+year={2020},
+volume={},
+number={},
+pages={10778-10787},
+keywords={Detectors;Feature extraction;Compounds;Object detection;Image resolution;Network architecture;Optimization},
+doi={10.1109/CVPR42600.2020.01079}}
+
+@inproceedings{bhavya2021inter,
+title={An Inter-Comparative Survey on State-of-the-Art Detectors—R-CNN, YOLO, and SSD},
+author={Bhavya Sree, B and Yashwanth Bharadwaj, V and Neelima, N},
+booktitle={Intelligent Manufacturing and Energy Sustainability: Proceedings of ICIMES 2020},
+pages={475--483},
+year={2021},
+organization={Springer}
+}
+
+@article{diwan2023object,
+title={Object detection using YOLO: Challenges, architectural successors, datasets and applications},
+author={Diwan, Tausif and Anirudh, G and Tembhurne, Jitendra V},
+journal={multimedia Tools and Applications},
+volume={82},
+number={6},
+pages={9243--9275},
+year={2023},
+publisher={Springer}
+}
+
+@article{hussain2023yolo,
+title={YOLO-v1 to YOLO-v8, the rise of YOLO and its complementary nature toward digital manufacturing and industrial defect detection},
+author={Hussain, Muhammad},
+journal={Machines},
+volume={11},
+number={7},
+pages={677},
+year={2023},
+publisher={MDPI}
+}
+
+@inproceedings{lan2018pedestrian,
+title={Pedestrian detection based on YOLO network model},
+author={Lan, Wenbo and Dang, Jianwu and Wang, Yangping and Wang, Song},
+booktitle={2018 IEEE international conference on mechatronics and automation (ICMA)},
+pages={1547--1551},
+year={2018},
+organization={IEEE}
+}
+
+@article{hsu2021adaptive,
+title={Adaptive fusion of multi-scale YOLO for pedestrian detection},
+author={Hsu, Wei-Yen and Lin, Wen-Yen},
+journal={IEEE Access},
+volume={9},
+pages={110063--110073},
+year={2021},
+publisher={IEEE}
+}
+
+@article{benjumea2021yolo,
+  title={YOLO-Z: Improving small object detection in YOLOv5 for autonomous vehicles},
+  author={Benjumea, Aduen and Teeti, Izzeddin and Cuzzolin, Fabio and Bradley, Andrew},
+  journal={arXiv preprint arXiv:2112.11798},
+  year={2021}
+}
+
+@article{dazlee2022object,
+title={Object detection for autonomous vehicles with sensor-based technology using yolo},
+author={DAZLEE, Nurin Miza Afiqah Andrie and Khalil, Syamimi Abdul and RAHMAN, Shuzlina Abdul and Mutalib, Sofianita},
+journal={International journal of intelligent systems and applications in engineering},
+volume={10},
+number={1},
+pages={129--134},
+year={2022}
+}
+
+@article{liang2022edge,
+title={Edge YOLO: Real-time intelligent object detection system based on edge-cloud cooperation in autonomous vehicles},
+author={Liang, Siyuan and Wu, Hao and Zhen, Li and Hua, Qiaozhi and Garg, Sahil and Kaddoum, Georges and Hassan, Mohammad Mehedi and Yu, Keping},
+journal={IEEE Transactions on Intelligent Transportation Systems},
+volume={23},
+number={12},
+pages={25345--25360},
+year={2022},
+publisher={IEEE}
+}
+
+@article{li2021detection,
+title={Detection and identification of moving objects at busy traffic road based on YOLO v4},
+author={Li, Qiutan and Ding, Xilong and Wang, Xufei and Chen, Le and Son, Jinku and Song, Jeong-Young},
+journal={The Journal of the Institute of Internet, Broadcasting and Communication},
+volume={21},
+number={1},
+pages={141--148},
+year={2021},
+publisher={The Institute of Internet, Broadcasting and Communication}
+}
+
+@article{shinde2018yolo,
+title={YOLO based human action recognition and localization},
+author={Shinde, Shubham and Kothari, Ashwin and Gupta, Vikram},
+journal={Procedia computer science},
+volume={133},
+pages={831--838},
+year={2018},
+publisher={Elsevier}
+}
+
+@article{ashraf2022weapons,
+title={Weapons detection for security and video surveillance using cnn and YOLO-v5s},
+author={Ashraf, Abdul Hanan and Imran, Muhammad and Qahtani, Abdulrahman M and Alsufyani, Abdulmajeed and Almutiry, Omar and Mahmood, Awais and Attique, Muhammad and Habib, Mohamed},
+journal={CMC-Comput. Mater. Contin},
+volume={70},
+number={4},
+pages={2761--2775},
+year={2022}
+}
+
+@article{zheng2022video,
+title={Video analysis in sports by lightweight object detection network under the background of sports industry development},
+author={Zheng, Yifei and Zhang, Hongling},
+journal={Computational Intelligence and Neuroscience},
+volume={2022},
+number={1},
+pages={3844770},
+year={2022},
+publisher={Wiley Online Library}
+}
+
+@inproceedings{ma2021fer,
+title={Fer-yolo: Detection and classification based on facial expressions},
+author={Ma, Hui and Celik, Turgay and Li, Hengchao},
+booktitle={Image and Graphics: 11th International Conference, ICIG 2021, Haikou, China, August 6--8, 2021, Proceedings, Part I 11},
+pages={28--39},
+year={2021},
+organization={Springer}
+}
+
+@article{tian2019apple,
+title={Apple detection during different growth stages in orchards using the improved YOLO-V3 model},
+author={Tian, Yunong and Yang, Guodong and Wang, Zhe and Wang, Hao and Li, En and Liang, Zize},
+journal={Computers and electronics in agriculture},
+volume={157},
+pages={417--426},
+year={2019},
+publisher={Elsevier}
+}
+
+@article{wu2020using,
+title={Using channel pruning-based YOLO v4 deep learning algorithm for the real-time and accurate detection of apple flowers in natural environments},
+author={Wu, Dihua and Lv, Shuaichao and Jiang, Mei and Song, Huaibo},
+journal={Computers and Electronics in Agriculture},
+volume={178},
+pages={105742},
+year={2020},
+publisher={Elsevier}
+}
+
+@inproceedings{lippi2021yolo,
+title={A yolo-based pest detection system for precision agriculture},
+author={Lippi, Martina and Bonucci, Niccol{\`o} and Carpio, Renzo Fabrizio and Contarini, Mario and Speranza, Stefano and Gasparri, Andrea},
+booktitle={2021 29th Mediterranean Conference on Control and Automation (MED)},
+pages={342--347},
+year={2021},
+organization={IEEE}
+}
+
+@inproceedings{yang2018real,
+title={Real-time face detection based on YOLO},
+author={Yang, Wang and Jiachun, Zheng},
+booktitle={2018 1st IEEE international conference on knowledge innovation and invention (ICKII)},
+pages={221--224},
+year={2018},
+organization={IEEE}
+}
+
+@article{chen2021yolo,
+title={YOLO-face: a real-time face detector},
+author={Chen, Weijun and Huang, Hongbo and Peng, Shuai and Zhou, Changsheng and Zhang, Cuiping},
+journal={The Visual Computer},
+volume={37},
+pages={805--813},
+year={2021},
+publisher={Springer}
+}
+
+@article{al2018simultaneous,
+title={Simultaneous detection and classification of breast masses in digital mammograms via a deep learning YOLO-based CAD system},
+author={Al-Masni, Mohammed A and Al-Antari, Mugahed A and Park, Jeong-Min and Gi, Geon and Kim, Tae-Yeon and Rivera, Patricio and Valarezo, Edwin and Choi, Mun-Taek and Han, Seung-Moo and Kim, Tae-Seong},
+journal={Computer methods and programs in biomedicine},
+volume={157},
+pages={85--94},
+year={2018},
+publisher={Elsevier}
+}
+
+@inproceedings{nie2019automatic,
+title={Automatic detection of melanoma with yolo deep convolutional neural networks},
+author={Nie, Yali and Sommella, Paolo and O’Nils, Mattias and Liguori, Consolatina and Lundgren, Jan},
+booktitle={2019 E-Health and Bioengineering Conference (EHB)},
+pages={1--4},
+year={2019},
+organization={IEEE}
+}
+
+@article{unver2019skin,
+title={Skin lesion segmentation in dermoscopic images with combination of YOLO and grabcut algorithm},
+author={{\"U}nver, Halil Murat and Ayan, Enes},
+journal={Diagnostics},
+volume={9},
+number={3},
+pages={72},
+year={2019},
+publisher={MDPI}
+}
+
+@article{tan2021comparison,
+title={Comparison of RetinaNet, SSD, and YOLO v3 for real-time pill identification},
+author={Tan, Lu and Huangfu, Tianran and Wu, Liyao and Chen, Wenying},
+journal={BMC medical informatics and decision making},
+volume={21},
+pages={1--11},
+year={2021},
+publisher={Springer}
+}
+
+@article{cheng2021small,
+title={A small attentional YOLO model for landslide detection from satellite remote sensing images},
+author={Cheng, Libo and Li, Jia and Duan, Ping and Wang, Mingguo},
+journal={Landslides},
+volume={18},
+number={8},
+pages={2751--2765},
+year={2021},
+publisher={Springer}
+}
+
+@article{pham2020yolo,
+title={YOLO-Fine: One-stage detector of small objects under various backgrounds in remote sensing images},
+author={Pham, Minh-Tan and Courtrai, Luc and Friguet, Chlo{\'e} and Lef{\`e}vre, S{\'e}bastien and Baussard, Alexandre},
+journal={Remote Sensing},
+volume={12},
+number={15},
+pages={2501},
+year={2020},
+publisher={MDPI}
+}
+
+@article{qing2021improved,
+title={Improved Yolo network for free-angle remote sensing target detection},
+author={Qing, Yuhao and Liu, Wenyi and Feng, Liuyan and Gao, Wanjia},
+journal={Remote Sensing},
+volume={13},
+number={11},
+pages={2171},
+year={2021},
+publisher={MDPI}
+}
+
+@article{zakria2022multiscale,
+title={Multiscale and direction target detecting in remote sensing images via modified YOLO-v4},
+author={Zakria, Zakria and Deng, Jianhua and Kumar, Rajesh and Khokhar, Muhammad Saddam and Cai, Jingye and Kumar, Jay},
+journal={IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing},
+volume={15},
+pages={1039--1048},
+year={2022},
+publisher={IEEE}
+}
+
+@inproceedings{kumar2021real,
+title={Real-time, YOLO-based intelligent surveillance and monitoring system using jetson TX2},
+author={Kumar, Prashant and Narasimha Swamy, S and Kumar, Pramod and Purohit, Gaurav and Raju, Kota Solomon},
+booktitle={Data analytics and management: proceedings of ICDAM},
+pages={461--471},
+year={2021},
+organization={Springer}
+}
+
+@inproceedings{bhambani2020real,
+title={Real-time face mask and social distancing violation detection system using yolo},
+author={Bhambani, Krisha and Jain, Tanmay and Sultanpure, Kavita A},
+booktitle={2020 IEEE Bangalore Humanitarian Technology Conference (B-HTC)},
+pages={1--6},
+year={2020},
+organization={IEEE}
+}
+
+@article{li2018real,
+title={Real-time detection of steel strip surface defects based on improved yolo detection network},
+author={Li, Jiangyun and Su, Zhenfeng and Geng, Jiahui and Yin, Yixin},
+journal={IFAC-PapersOnLine},
+volume={51},
+number={21},
+pages={76--81},
+year={2018},
+publisher={Elsevier}
+}
+
+@inproceedings{ukhwah2019asphalt,
+title={Asphalt pavement pothole detection using deep learning method based on YOLO neural network},
+author={Ukhwah, Ernin Niswatul and Yuniarno, Eko Mulyanto and Suprapto, Yoyon Kusnendar},
+booktitle={2019 International Seminar on Intelligent Technology and Its Applications (ISITIA)},
+pages={35--40},
+year={2019},
+organization={IEEE}
+}
+
+@article{du2021pavement,
+title={Pavement distress detection and classification based on YOLO network},
+author={Du, Yuchuan and Pan, Ning and Xu, Zihao and Deng, Fuwen and Shen, Yu and Kang, Hua},
+journal={International Journal of Pavement Engineering},
+volume={22},
+number={13},
+pages={1659--1672},
+year={2021},
+publisher={Taylor \& Francis}
+}
+
+@article{chen2019automatic,
+title={Automatic License Plate Recognition via sliding-window darknet-YOLO deep learning},
+author={Chen, Rung-Ching and others},
+journal={Image and Vision Computing},
+volume={87},
+pages={47--56},
+year={2019},
+publisher={Elsevier}
+}
+
+@article{dewi2022deep,
+title={Deep convolutional neural network for enhancing traffic sign recognition developed on Yolo V4},
+author={Dewi, Christine and Chen, Rung-Ching and Jiang, Xiaoyi and Yu, Hui},
+journal={Multimedia Tools and Applications},
+volume={81},
+number={26},
+pages={37821--37845},
+year={2022},
+publisher={Springer}
+}
+
+@article{roy2023wildect,
+title={WilDect-YOLO: An efficient and robust computer vision-based accurate object localization model for automated endangered wildlife detection},
+author={Roy, Arunabha M and Bhaduri, Jayabrata and Kumar, Teerath and Raj, Kislay},
+journal={Ecological Informatics},
+volume={75},
+pages={101919},
+year={2023},
+publisher={Elsevier}
+}
+
+@inproceedings{kulik2020experiments,
+title={Experiments with neural net object detection system YOLO on small training datasets for intelligent robotics},
+author={Kulik, SD and Shtanko, AN},
+booktitle={Advanced Technologies in Robotics and Intelligent Systems: Proceedings of ITR 2019},
+pages={157--162},
+year={2020},
+organization={Springer}
+}
+
+@article{dos2019mobile,
+title={Mobile robot navigation using an object recognition software with RGBD images and the YOLO algorithm},
+author={Dos Reis, Douglas Henke and Welfer, Daniel and De Souza Leite Cuadros, Marco Antonio and Gamarra, Daniel Fernando Tello},
+journal={Applied Artificial Intelligence},
+volume={33},
+number={14},
+pages={1290--1305},
+year={2019},
+publisher={Taylor \& Francis}
+}
+
+@inproceedings{sahin2021yolodrone,
+title={Yolodrone: Improved yolo architecture for object detection in drone images},
+author={Sahin, Oyku and Ozer, Sedat},
+booktitle={2021 44th International Conference on Telecommunications and Signal Processing (TSP)},
+pages={361--365},
+year={2021},
+organization={IEEE}
+}
+
+@article{chen2023yolo,
+title={Yolo-based uav technology: A review of the research and its applications},
+author={Chen, Chunling and Zheng, Ziyue and Xu, Tongyu and Guo, Shuang and Feng, Shuai and Yao, Weixiang and Lan, Yubin},
+journal={Drones},
+volume={7},
+number={3},
+pages={190},
+year={2023},
+publisher={MDPI}
+}
+
+@article{everingham2010pascal,
+title={The pascal visual object classes (voc) challenge},
+author={Everingham, Mark and Van Gool, Luc and Williams, Christopher KI and Winn, John and Zisserman, Andrew},
+journal={International journal of computer vision},
+volume={88},
+pages={303--338},
+year={2010},
+publisher={Springer}
+}
+
+@inproceedings{COCO,
+title={Microsoft coco: Common objects in context},
+author={Lin, Tsung-Yi and Maire, Michael and Belongie, Serge and Hays, James and Perona, Pietro and Ramanan, Deva and Doll{\'a}r, Piotr and Zitnick, C Lawrence},
+booktitle={Computer Vision--ECCV 2014: 13th European Conference, Zurich, Switzerland, September 6-12, 2014, Proceedings, Part V 13},
+pages={740--755},
+year={2014},
+organization={Springer}
+}
+
+@inproceedings{redmon2016you,
+title={You only look once: Unified, real-time object detection},
+author={Redmon, J},
+booktitle={Proceedings of the IEEE conference on computer vision and pattern recognition},
+year={2016}
+}
+
+@inproceedings{maas2013rectifier,
+title={Rectifier nonlinearities improve neural network acoustic models},
+author={Maas, Andrew L and Hannun, Awni Y and Ng, Andrew Y and others},
+booktitle={Proc. icml},
+volume={30},
+number={1},
+pages={3},
+year={2013},
+organization={Atlanta, GA}
+}
+
+@inproceedings{szegedy2015going,
+title={Going deeper with convolutions},
+author={Szegedy, Christian and Liu, Wei and Jia, Yangqing and Sermanet, Pierre and Reed, Scott and Anguelov, Dragomir and Erhan, Dumitru and Vanhoucke, Vincent and Rabinovich, Andrew},
+booktitle={Proceedings of the IEEE conference on computer vision and pattern recognition},
+pages={1--9},
+year={2015}
+}
+
+@article{lin2013network,
+title={Network in network},
+author={Lin, M},
+journal={arXiv preprint arXiv:1312.4400},
+year={2013}
+}
+
+@article{russakovsky2015imagenet,
+title={Imagenet large scale visual recognition challenge},
+author={Russakovsky, Olga and Deng, Jia and Su, Hao and Krause, Jonathan and Satheesh, Sanjeev and Ma, Sean and Huang, Zhiheng and Karpathy, Andrej and Khosla, Aditya and Bernstein, Michael and others},
+journal={International journal of computer vision},
+volume={115},
+pages={211--252},
+year={2015},
+publisher={Springer}
+}
+
+@inproceedings{redmon2017yolo9000,
+title={YOLO9000: better, faster, stronger},
+author={Redmon, Joseph and Farhadi, Ali},
+booktitle={Proceedings of the IEEE conference on computer vision and pattern recognition},
+pages={7263--7271},
+year={2017}
+}
+
+@article{redmon2018yolov3,
+title={Yolov3: An incremental improvement},
+author={Redmon, Joseph},
+journal={arXiv preprint arXiv:1804.02767},
+year={2018}
+}
+
+@article{krasin2017openimages,
+title={Openimages: A public dataset for large-scale multi-label and multi-class image classification},
+author={Krasin, Ivan and Duerig, Tom and Alldrin, Neil and Ferrari, Vittorio and Abu-El-Haija, Sami and Kuznetsova, Alina and Rom, Hassan and Uijlings, Jasper and Popov, Stefan and Veit, Andreas and others},
+journal={Dataset available from https://github. com/openimages},
+volume={2},
+number={3},
+pages={18},
+year={2017}
+}
+
+@article{he2015spatial,
+title={Spatial pyramid pooling in deep convolutional networks for visual recognition},
+author={He, Kaiming and Zhang, Xiangyu and Ren, Shaoqing and Sun, Jian},
+journal={IEEE transactions on pattern analysis and machine intelligence},
+volume={37},
+number={9},
+pages={1904--1916},
+year={2015},
+publisher={IEEE}
+}
+
+@inproceedings{lin2017feature,
+title={Feature pyramid networks for object detection},
+author={Lin, Tsung-Yi and Doll{\'a}r, Piotr and Girshick, Ross and He, Kaiming and Hariharan, Bharath and Belongie, Serge},
+booktitle={Proceedings of the IEEE conference on computer vision and pattern recognition},
+pages={2117--2125},
+year={2017}
+}
+
+@article{bochkovskiy2020yolov4,
+title={Yolov4: Optimal speed and accuracy of object detection},
+author={Bochkovskiy, Alexey and Wang, Chien-Yao and Liao, Hong-Yuan Mark},
+journal={arXiv preprint arXiv:2004.10934},
+year={2020}
+}
+
+@article{chen2017deeplab,
+title={Deeplab: Semantic image segmentation with deep convolutional nets, atrous convolution, and fully connected crfs},
+author={Chen, Liang-Chieh and Papandreou, George and Kokkinos, Iasonas and Murphy, Kevin and Yuille, Alan L},
+journal={IEEE transactions on pattern analysis and machine intelligence},
+volume={40},
+number={4},
+pages={834--848},
+year={2017},
+publisher={IEEE}
+}
+
+@inproceedings{liu2018receptive,
+title={Receptive field block net for accurate and fast object detection},
+author={Liu, Songtao and Huang, Di and others},
+booktitle={Proceedings of the European conference on computer vision (ECCV)},
+pages={385--400},
+year={2018}
+}
+
+@inproceedings{he2016deep,
+title={Deep residual learning for image recognition},
+author={He, Kaiming and Zhang, Xiangyu and Ren, Shaoqing and Sun, Jian},
+booktitle={Proceedings of the IEEE conference on computer vision and pattern recognition},
+pages={770--778},
+year={2016}
+}
+
+@inproceedings{hariharan2015hypercolumns,
+title={Hypercolumns for object segmentation and fine-grained localization},
+author={Hariharan, Bharath and Arbel{\'a}ez, Pablo and Girshick, Ross and Malik, Jitendra},
+booktitle={Proceedings of the IEEE conference on computer vision and pattern recognition},
+pages={447--456},
+year={2015}
+}
+
+@inproceedings{zhao2019m2det,
+title={M2det: A single-shot object detector based on multi-level feature pyramid network},
+author={Zhao, Qijie and Sheng, Tao and Wang, Yongtao and Tang, Zhi and Chen, Ying and Cai, Ling and Ling, Haibin},
+booktitle={Proceedings of the AAAI conference on artificial intelligence},
+volume={33},
+number={01},
+pages={9259--9266},
+year={2019}
+}
+
+@inproceedings{he2015delving,
+title={Delving deep into rectifiers: Surpassing human-level performance on imagenet classification},
+author={He, Kaiming and Zhang, Xiangyu and Ren, Shaoqing and Sun, Jian},
+booktitle={Proceedings of the IEEE international conference on computer vision},
+pages={1026--1034},
+year={2015}
+}
+
+@article{misra2019mish,
+title={Mish: A self regularized non-monotonic activation function},
+author={Misra, Diganta},
+journal={arXiv preprint arXiv:1908.08681},
+year={2019}
+}
+
+@inproceedings{bodla2017soft,
+title={Soft-NMS--improving object detection with one line of code},
+author={Bodla, Navaneeth and Singh, Bharat and Chellappa, Rama and Davis, Larry S},
+booktitle={Proceedings of the IEEE international conference on computer vision},
+pages={5561--5569},
+year={2017}
+}
+
+@inproceedings{xie2017aggregated,
+title={Aggregated residual transformations for deep neural networks},
+author={Xie, Saining and Girshick, Ross and Doll{\'a}r, Piotr and Tu, Zhuowen and He, Kaiming},
+booktitle={Proceedings of the IEEE conference on computer vision and pattern recognition},
+pages={1492--1500},
+year={2017}
+}
+
+@inproceedings{tan2019efficientnet,
+title={Efficientnet: Rethinking model scaling for convolutional neural networks},
+author={Tan, Mingxing and Le, Quoc},
+booktitle={International conference on machine learning},
+pages={6105--6114},
+year={2019},
+organization={PMLR}
+}
+
+@inproceedings{wang2020cspnet,
+title={CSPNet: A new backbone that can enhance learning capability of CNN},
+author={Wang, Chien-Yao and Liao, Hong-Yuan Mark and Wu, Yueh-Hua and Chen, Ping-Yang and Hsieh, Jun-Wei and Yeh, I-Hau},
+booktitle={Proceedings of the IEEE/CVF conference on computer vision and pattern recognition workshops},
+pages={390--391},
+year={2020}
+}
+
+@inproceedings{liu2018path,
+title={Path aggregation network for instance segmentation},
+author={Liu, Shu and Qi, Lu and Qin, Haifang and Shi, Jianping and Jia, Jiaya},
+booktitle={Proceedings of the IEEE conference on computer vision and pattern recognition},
+pages={8759--8768},
+year={2018}
+}
+
+@inproceedings{woo2018cbam,
+title={Cbam: Convolutional block attention module},
+author={Woo, Sanghyun and Park, Jongchan and Lee, Joon-Young and Kweon, In So},
+booktitle={Proceedings of the European conference on computer vision (ECCV)},
+pages={3--19},
+year={2018}
+}
+
+@article{ghiasi2018dropblock,
+title={Dropblock: A regularization method for convolutional networks},
+author={Ghiasi, Golnaz and Lin, Tsung-Yi and Le, Quoc V},
+journal={Advances in neural information processing systems},
+volume={31},
+year={2018}
+}
+
+@article{srivastava2014dropout,
+title={Dropout: a simple way to prevent neural networks from overfitting},
+author={Srivastava, Nitish and Hinton, Geoffrey and Krizhevsky, Alex and Sutskever, Ilya and Salakhutdinov, Ruslan},
+journal={The journal of machine learning research},
+volume={15},
+number={1},
+pages={1929--1958},
+year={2014},
+publisher={JMLR. org}
+}
+
+@inproceedings{szegedy2016rethinking,
+title={Rethinking the inception architecture for computer vision},
+author={Szegedy, Christian and Vanhoucke, Vincent and Ioffe, Sergey and Shlens, Jon and Wojna, Zbigniew},
+booktitle={Proceedings of the IEEE conference on computer vision and pattern recognition},
+pages={2818--2826},
+year={2016}
+}
+
+@article{islam2017label,
+title={Label refinement network for coarse-to-fine semantic segmentation},
+author={Islam, Md Amirul and Naha, Shujon and Rochan, Mrigank and Bruce, Neil and Wang, Yang},
+journal={arXiv preprint arXiv:1703.00551},
+year={2017}
+}
+
+@inproceedings{zheng2020distance,
+title={Distance-IoU loss: Faster and better learning for bounding box regression},
+author={Zheng, Zhaohui and Wang, Ping and Liu, Wei and Li, Jinze and Ye, Rongguang and Ren, Dongwei},
+booktitle={Proceedings of the AAAI conference on artificial intelligence},
+volume={34},
+number={07},
+pages={12993--13000},
+year={2020}
+}
+
+@article{ioffe2015batch,
+title={Batch normalization: Accelerating deep network training by reducing internal covariate shift},
+author={Ioffe, Sergey},
+journal={arXiv preprint arXiv:1502.03167},
+year={2015}
+}
+
+@article{loshchilov2016sgdr,
+title={Sgdr: Stochastic gradient descent with warm restarts},
+author={Loshchilov, Ilya and Hutter, Frank},
+journal={arXiv preprint arXiv:1608.03983},
+year={2016}
+}
+
+@article{wang2021real,
+title={A real-time deep learning forest fire monitoring algorithm based on an improved Pruned+ KD model},
+author={Wang, Shengying and Zhao, Jing and Ta, Na and Zhao, Xiaoye and Xiao, Mingxia and Wei, Haicheng},
+journal={Journal of Real-Time Image Processing},
+volume={18},
+number={6},
+pages={2319--2329},
+year={2021},
+publisher={Springer}
+}
+
+% G. Jocher, “YOLOv5 by Ultralytics.” https://github.com/ultralytics/yolov5, 2020. Accessed: February
+% 30, 2023.
+
+@software{Jocher_YOLOv5_by_Ultralytics_2020,
+author = {Jocher, Glenn},
+doi = {10.5281/zenodo.3908559},
+license = {AGPL-3.0},
+month = may,
+title = {{YOLOv5 by Ultralytics}},
+url = {https://github.com/ultralytics/yolov5},
+version = {7.0},
+year = {2020}
+}
+
+@article{hendrycks2016gaussian,
+title={Gaussian error linear units (gelus)},
+author={Hendrycks, Dan and Gimpel, Kevin},
+journal={arXiv preprint arXiv:1606.08415},
+year={2016}
+}
+
+@inproceedings{ghiasi2021simple,
+title={Simple copy-paste is a strong data augmentation method for instance segmentation},
+author={Ghiasi, Golnaz and Cui, Yin and Srinivas, Aravind and Qian, Rui and Lin, Tsung-Yi and Cubuk, Ekin D and Le, Quoc V and Zoph, Barret},
+booktitle={Proceedings of the IEEE/CVF conference on computer vision and pattern recognition},
+pages={2918--2928},
+year={2021}
+}
+
+@article{zhang2017mixup,
+title={mixup: Beyond empirical risk minimization},
+author={Zhang, Hongyi},
+journal={arXiv preprint arXiv:1710.09412},
+year={2017}
+}
+
+@article{buslaev2020albumentations,
+  title={Albumentations: fast and flexible image augmentations},
+  author={Buslaev, Alexander and Iglovikov, Vladimir I and Khvedchenya, Eugene and Parinov, Alex and Druzhinin, Mikhail and Kalinin, Alexandr A},
+  journal={Information},
+  volume={11},
+  number={2},
+  pages={125},
+  year={2020},
+  publisher={Multidisciplinary Digital Publishing Institute}
+}
+
+% M. Contributors, “YOLOv5 by MMYOLO.” https://github.com/open-mmlab/mmyolo/tree/main/
+% configs/yolov5, 2023. Accessed: May 13, 2023.
+
+% Ultralytics, “Model Structure.” https://docs.ultralytics.com/yolov5/tutorials/architecture_
+% description/#1-model-structure, 2023. Accessed: May 14, 2023.
+
+@inproceedings{wang2021scaled,
+  title={Scaled-yolov4: Scaling cross stage partial network},
+  author={Wang, Chien-Yao and Bochkovskiy, Alexey and Liao, Hong-Yuan Mark},
+  booktitle={Proceedings of the IEEE/cvf conference on computer vision and pattern recognition},
+  pages={13029--13038},
+  year={2021}
+}
+
+@article{long2020pp,
+  title={PP-YOLO: An effective and efficient implementation of object detector},
+  author={Long, Xiang and Deng, Kaipeng and Wang, Guanzhong and Zhang, Yang and Dang, Qingqing and Gao, Yuan and Shen, Hui and Ren, Jianguo and Han, Shumin and Ding, Errui and others},
+  journal={arXiv preprint arXiv:2007.12099},
+  year={2020}
+}
+
+@article{wang2021you,
+  title={You only learn one representation: Unified network for multiple tasks},
+  author={Wang, Chien-Yao and Yeh, I-Hau and Liao, Hong-Yuan Mark},
+  journal={arXiv preprint arXiv:2105.04206},
+  year={2021}
+}
+
+@article{ge2021yolox,
+  title={Yolox: Exceeding yolo series in 2021},
+  author={Ge, Z},
+  journal={arXiv preprint arXiv:2107.08430},
+  year={2021}
+}
+
+@inproceedings{law2018cornernet,
+  title={Cornernet: Detecting objects as paired keypoints},
+  author={Law, Hei and Deng, Jia},
+  booktitle={Proceedings of the European conference on computer vision (ECCV)},
+  pages={734--750},
+  year={2018}
+}
+
+@inproceedings{duan2019centernet,
+  title={Centernet: Keypoint triplets for object detection},
+  author={Duan, Kaiwen and Bai, Song and Xie, Lingxi and Qi, Honggang and Huang, Qingming and Tian, Qi},
+  booktitle={Proceedings of the IEEE/CVF international conference on computer vision},
+  pages={6569--6578},
+  year={2019}
+}
+
+@article{tian2019fcos,
+  title={FCOS: Fully convolutional one-stage object detection. arXiv 2019},
+  author={Tian, Z and Shen, C and Chen, H and He, T},
+  journal={arXiv preprint arXiv:1904.01355},
+  year={2019}
+}
+
+@inproceedings{song2020revisiting,
+  title={Revisiting the sibling head in object detector},
+  author={Song, Guanglu and Liu, Yu and Wang, Xiaogang},
+  booktitle={Proceedings of the IEEE/CVF conference on computer vision and pattern recognition},
+  pages={11563--11572},
+  year={2020}
+}
+
+@inproceedings{wu2020rethinking,
+  title={Rethinking classification and localization for object detection},
+  author={Wu, Yue and Chen, Yinpeng and Yuan, Lu and Liu, Zicheng and Wang, Lijuan and Li, Hongzhi and Fu, Yun},
+  booktitle={Proceedings of the IEEE/CVF conference on computer vision and pattern recognition},
+  pages={10186--10195},
+  year={2020}
+}
+
+@inproceedings{ge2021ota,
+  title={Ota: Optimal transport assignment for object detection},
+  author={Ge, Zheng and Liu, Songtao and Li, Zeming and Yoshie, Osamu and Sun, Jian},
+  booktitle={Proceedings of the IEEE/CVF conference on computer vision and pattern recognition},
+  pages={303--312},
+  year={2021}
+}
+
+@article{li2022yolov6,
+  title={YOLOv6: A single-stage object detection framework for industrial applications},
+  author={Li, Chuyi and Li, Lulu and Jiang, Hongliang and Weng, Kaiheng and Geng, Yifei and Li, Liang and Ke, Zaidan and Li, Qingyuan and Cheng, Meng and Nie, Weiqiang and others},
+  journal={arXiv preprint arXiv:2209.02976},
+  year={2022}
+}
+
+@inproceedings{ding2021repvgg,
+  title={Repvgg: Making vgg-style convnets great again},
+  author={Ding, Xiaohan and Zhang, Xiangyu and Ma, Ningning and Han, Jungong and Ding, Guiguang and Sun, Jian},
+  booktitle={Proceedings of the IEEE/CVF conference on computer vision and pattern recognition},
+  pages={13733--13742},
+  year={2021}
+}
+
+% M. Contributors, “YOLOv6 by MMYOLO.” https://github.com/open-mmlab/mmyolo/tree/main/
+% configs/yolov6, 2023. Accessed: May 13, 2023.
+
+@inproceedings{feng2021tood,
+  title={Tood: Task-aligned one-stage object detection},
+  author={Feng, Chengjian and Zhong, Yujie and Gao, Yu and Scott, Matthew R and Huang, Weilin},
+  booktitle={2021 IEEE/CVF International Conference on Computer Vision (ICCV)},
+  pages={3490--3499},
+  year={2021},
+  organization={IEEE Computer Society}
+}
+
+@inproceedings{zhang2021varifocalnet,
+  title={Varifocalnet: An iou-aware dense object detector},
+  author={Zhang, Haoyang and Wang, Ying and Dayoub, Feras and Sunderhauf, Niko},
+  booktitle={Proceedings of the IEEE/CVF conference on computer vision and pattern recognition},
+  pages={8514--8523},
+  year={2021}
+}
+
+@article{gevorgyan2022siou,
+  title={SIoU loss: More powerful learning for bounding box regression},
+  author={Gevorgyan, Zhora},
+  journal={arXiv preprint arXiv:2205.12740},
+  year={2022}
+}
+
+@inproceedings{rezatofighi2019generalized,
+  title={Generalized intersection over union: A metric and a loss for bounding box regression},
+  author={Rezatofighi, Hamid and Tsoi, Nathan and Gwak, JunYoung and Sadeghian, Amir and Reid, Ian and Savarese, Silvio},
+  booktitle={Proceedings of the IEEE/CVF conference on computer vision and pattern recognition},
+  pages={658--666},
+  year={2019}
+}
+
+@article{ding2022re,
+  title={Re-parameterizing your optimizers rather than architectures},
+  author={Ding, Xiaohan and Chen, Honghao and Zhang, Xiangyu and Huang, Kaiqi and Han, Jungong and Ding, Guiguang},
+  journal={arXiv preprint arXiv:2205.15242},
+  year={2022}
+}
+
+@inproceedings{shu2021channel,
+  title={Channel-wise knowledge distillation for dense prediction},
+  author={Shu, Changyong and Liu, Yifan and Gao, Jianfei and Yan, Zheng and Shen, Chunhua},
+  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
+  pages={5311--5320},
+  year={2021}
+}
+
+@inproceedings{wang2023yolov7,
+  title={YOLOv7: Trainable bag-of-freebies sets new state-of-the-art for real-time object detectors},
+  author={Wang, Chien-Yao and Bochkovskiy, Alexey and Liao, Hong-Yuan Mark},
+  booktitle={Proceedings of the IEEE/CVF conference on computer vision and pattern recognition},
+  pages={7464--7475},
+  year={2023}
+}
+
+% M. Contributors, “YOLOv7 by MMYOLO.” https://github.com/open-mmlab/mmyolo/tree/main/
+% configs/yolov7, 2023. Accessed: May 13, 2023.
+
+@article{wang2022designing,
+  title={Designing network design strategies through gradient path analysis},
+  author={Wang, Chien-Yao and Liao, Hong-Yuan Mark and Yeh, I-Hau},
+  journal={arXiv preprint arXiv:2211.04800},
+  year={2022}
+}
+
+@inproceedings{huang2017densely,
+  title={Densely connected convolutional networks},
+  author={Huang, Gao and Liu, Zhuang and Van Der Maaten, Laurens and Weinberger, Kilian Q},
+  booktitle={Proceedings of the IEEE conference on computer vision and pattern recognition},
+  pages={4700--4708},
+  year={2017}
+}
+
+@article{xu2022damo,
+  title={Damo-yolo: A report on real-time object detection design},
+  author={Xu, Xianzhe and Jiang, Yiqi and Chen, Weihua and Huang, Yilun and Zhang, Yuan and Sun, Xiuyu},
+  journal={arXiv preprint arXiv:2211.15444},
+  year={2022}
+}
+
+% Alibaba, “TinyNAS.” https://github.com/alibaba/lightweight-neural-architecture-search,
+% 2023. Accessed: March 18, 2023.
+
+@software{TinyNAS,
+author = {Alibaba},
+doi = {10.5281/zenodo.3908559},
+license = {AGPL-3.0},
+month = may,
+title = {{TinyNAS}},
+url = {https://github.com/alibaba/lightweight-neural-architecture-search},
+version = {7.0},
+year = {2020}
+}
+
+@article{jiang2022giraffedet,
+  title={GiraffeDet: A heavy-neck paradigm for object detection},
+  author={Jiang, Yiqi and Tan, Zhiyu and Wang, Junyan and Sun, Xiuyu and Lin, Ming and Li, Hao},
+  journal={arXiv preprint arXiv:2202.04256},
+  year={2022}
+}
+
+% G. Jocher, A. Chaurasia, and J. Qiu, “YOLO by Ultralytics.” https://github.com/ultralytics/
+% ultralytics, 2023. Accessed: February 30, 2023.
+
+% Citing this github repo is causing bibtex to crash
+
+@article{li2020generalized,
+  title={Generalized focal loss: Learning qualified and distributed bounding boxes for dense object detection},
+  author={Li, Xiang and Wang, Wenhai and Wu, Lijun and Chen, Shuo and Hu, Xiaolin and Li, Jun and Tang, Jinhui and Yang, Jian},
+  journal={Advances in Neural Information Processing Systems},
+  volume={33},
+  pages={21002--21012},
+  year={2020}
+}
+
+% M. Contributors, “YOLOv8 by MMYOLO.” https://github.com/open-mmlab/mmyolo/tree/main/
+% configs/yolov8, 2023. Accessed: May 13, 2023.
+
+@article{ma2019paddlepaddle,
+  title={PaddlePaddle: An open-source deep learning platform from industrial practice},
+  author={Ma, Yanjun and Yu, Dianhai and Wu, Tian and Wang, Haifeng},
+  journal={Frontiers of Data and Domputing},
+  volume={1},
+  number={1},
+  pages={105--115},
+  year={2019}
+}
+
+@inproceedings{dai2017deformable,
+  title={Deformable convolutional networks},
+  author={Dai, Jifeng and Qi, Haozhi and Xiong, Yuwen and Li, Yi and Zhang, Guodong and Hu, Han and Wei, Yichen},
+  booktitle={Proceedings of the IEEE international conference on computer vision},
+  pages={764--773},
+  year={2017}
+}
+
+@inproceedings{xinlong2020solov2,
+  title={Solov2: Dynamic, faster and stronger},
+  author={Xinlong, Wang and Rufeng, Zhang and Tao, Kong and Lei, Li and Chunhua, Shen},
+  booktitle={Proc. NIPS},
+  year={2020}
+}
+
+@article{liu2018intriguing,
+  title={An intriguing failing of convolutional neural networks and the coordconv solution},
+  author={Liu, Rosanne and Lehman, Joel and Molino, Piero and Petroski Such, Felipe and Frank, Eric and Sergeev, Alex and Yosinski, Jason},
+  journal={Advances in neural information processing systems},
+  volume={31},
+  year={2018}
+}
+
+@article{huang2021pp,
+  title={PP-YOLOv2: A practical object detector},
+  author={Huang, Xin and Wang, Xinxin and Lv, Wenyu and Bai, Xiaying and Long, Xiang and Deng, Kaipeng and Dang, Qingqing and Han, Shumin and Liu, Qiwen and Hu, Xiaoguang and others},
+  journal={arXiv preprint arXiv:2104.10419},
+  year={2021}
+}
+
+@article{xu2022pp,
+  title={PP-YOLOE: An evolved version of YOLO},
+  author={Xu, Shangliang and Wang, Xinxin and Lv, Wenyu and Chang, Qinyao and Cui, Cheng and Deng, Kaipeng and Wang, Guanzhong and Dang, Qingqing and Wei, Shengyu and Du, Yuning and others},
+  journal={arXiv preprint arXiv:2203.16250},
+  year={2022}
+}
+
+@article{rao2021treenet,
+  title={Treenet: A lightweight one-shot aggregation convolutional network},
+  author={Rao, Lu},
+  journal={arXiv preprint arXiv:2109.12342},
+  year={2021}
+}
+
+% M. Contributors, “PP-YOLOE by MMYOLO.” https://github.com/open-mmlab/mmyolo/tree/main/
+% configs/ppyoloe, 2023. Accessed: May 13, 2023.
+
+% R. team, “YOLO-NAS by Deci Achieves State-of-the-Art Performance on Object Detection Using Neural Architecture
+% Search.” https://deci.ai/blog/yolo-nas-object-detection-foundation-model/, 2023.
+% Accessed: May 12, 2023.
+
+@inproceedings{chu2024make,
+  title={Make repvgg greater again: A quantization-aware approach},
+  author={Chu, Xiangxiang and Li, Liang and Zhang, Bo},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={38},
+  number={10},
+  pages={11624--11632},
+  year={2024}
+}
+
+@inproceedings{shao2019objects365,
+  title={Objects365: A large-scale, high-quality dataset for object detection},
+  author={Shao, Shuai and Li, Zeming and Zhang, Tianyuan and Peng, Chao and Yu, Gang and Zhang, Xiangyu and Li, Jing and Sun, Jian},
+  booktitle={Proceedings of the IEEE/CVF international conference on computer vision},
+  pages={8430--8439},
+  year={2019}
+}
+
+@article{vaswani2017attention,
+  title={Attention is all you need},
+  author={Vaswani, A},
+  journal={Advances in Neural Information Processing Systems},
+  year={2017}
+}
+
+@article{fang2021you,
+  title={You only look at one sequence: Rethinking transformer in vision through object detection},
+  author={Fang, Yuxin and Liao, Bencheng and Wang, Xinggang and Fang, Jiemin and Qi, Jiyang and Wu, Rui and Niu, Jianwei and Liu, Wenyu},
+  journal={Advances in Neural Information Processing Systems},
+  volume={34},
+  pages={26183--26197},
+  year={2021}
+}
+
+@article{alexey2020image,
+  title={An image is worth 16x16 words: Transformers for image recognition at scale},
+  author={Alexey, Dosovitskiy},
+  journal={arXiv preprint arXiv: 2010.11929},
+  year={2020}
+}
+
+@inproceedings{carion2020end,
+  title={End-to-end object detection with transformers},
+  author={Carion, Nicolas and Massa, Francisco and Synnaeve, Gabriel and Usunier, Nicolas and Kirillov, Alexander and Zagoruyko, Sergey},
+  booktitle={European conference on computer vision},
+  pages={213--229},
+  year={2020},
+  organization={Springer}
+}
+
+@inproceedings{zhang2021vit,
+  title={ViT-YOLO: Transformer-based YOLO for object detection},
+  author={Zhang, Zixiao and Lu, Xiaoqiang and Cao, Guojin and Yang, Yuting and Jiao, Licheng and Liu, Fang},
+  booktitle={Proceedings of the IEEE/CVF international conference on computer vision},
+  pages={2799--2808},
+  year={2021}
+}
+
+@article{guo2022msft,
+  title={Msft-yolo: Improved yolov5 based on transformer for detecting defects of steel surface},
+  author={Guo, Zexuan and Wang, Chensheng and Yang, Guang and Huang, Zeyuan and Li, Guo},
+  journal={Sensors},
+  volume={22},
+  number={9},
+  pages={3467},
+  year={2022},
+  publisher={MDPI}
+}
+
+@article{liu2022nrt,
+  title={NRT-YOLO: Improved YOLOv5 based on nested residual transformer for tiny remote sensing object detection},
+  author={Liu, Yukuan and He, Guanglin and Wang, Zehu and Li, Weizhe and Huang, Hongfei},
+  journal={Sensors},
+  volume={22},
+  number={13},
+  pages={4953},
+  year={2022},
+  publisher={MDPI}
+}
+
+@inproceedings{xia2018dota,
+  title={DOTA: A large-scale dataset for object detection in aerial images},
+  author={Xia, Gui-Song and Bai, Xiang and Ding, Jian and Zhu, Zhen and Belongie, Serge and Luo, Jiebo and Datcu, Mihai and Pelillo, Marcello and Zhang, Liangpei},
+  booktitle={Proceedings of the IEEE conference on computer vision and pattern recognition},
+  pages={3974--3983},
+  year={2018}
+}
+
+@article{wang2022yolo,
+  title={YOLO-SD: Small ship detection in SAR images by multi-scale convolution and feature transformer module},
+  author={Wang, Simin and Gao, Song and Zhou, Lun and Liu, Ruochen and Zhang, Hengsheng and Liu, Jiaming and Jia, Yong and Qian, Jiang},
+  journal={Remote Sensing},
+  volume={14},
+  number={20},
+  pages={5268},
+  year={2022},
+  publisher={MDPI}
+}
+
+@article{wei2020hrsid,
+  title={HRSID: A high-resolution SAR images dataset for ship detection and instance segmentation},
+  author={Wei, Shunjun and Zeng, Xiangfeng and Qu, Qizhe and Wang, Mou and Su, Hao and Shi, Jun},
+  journal={Ieee Access},
+  volume={8},
+  pages={120234--120254},
+  year={2020},
+  publisher={IEEE}
+}
+
+@article{ouyang2022deyo,
+  title={Deyo: Detr with yolo for step-by-step object detection},
+  author={Ouyang, Haodong},
+  journal={arXiv preprint arXiv:2211.06588},
+  year={2022}
+}
+
+% Ultralytics, “YOLOv8—Ultralytics YOLOv8 Documentation.” https://docs.ultralytics.com/models/
+% yolov8/, 2023. Accessed: January 7, 2024.
+
+% MLPerf™ Inference Benchmark Suite
+% https://github.com/mlcommons/inference
+
+@article{DBLP:journals/corr/abs-1911-02549,
+  author       = {Vijay Janapa Reddi and
+                  Christine Cheng and
+                  David Kanter and
+                  Peter Mattson and
+                  Guenther Schmuelling and
+                  Carole{-}Jean Wu and
+                  Brian Anderson and
+                  Maximilien Breughe and
+                  Mark Charlebois and
+                  William Chou and
+                  Ramesh Chukka and
+                  Cody Coleman and
+                  Sam Davis and
+                  Pan Deng and
+                  Greg Diamos and
+                  Jared Duke and
+                  Dave Fick and
+                  J. Scott Gardner and
+                  Itay Hubara and
+                  Sachin Idgunji and
+                  Thomas B. Jablin and
+                  Jeff Jiao and
+                  Tom St. John and
+                  Pankaj Kanwar and
+                  David Lee and
+                  Jeffery Liao and
+                  Anton Lokhmotov and
+                  Francisco Massa and
+                  Peng Meng and
+                  Paulius Micikevicius and
+                  Colin Osborne and
+                  Gennady Pekhimenko and
+                  Arun Tejusve Raghunath Rajan and
+                  Dilip Sequeira and
+                  Ashish Sirasao and
+                  Fei Sun and
+                  Hanlin Tang and
+                  Michael Thomson and
+                  Frank Wei and
+                  Ephrem Wu and
+                  Lingjie Xu and
+                  Koichi Yamada and
+                  Bing Yu and
+                  George Yuan and
+                  Aaron Zhong and
+                  Peizhao Zhang and
+                  Yuchen Zhou},
+  title        = {MLPerf Inference Benchmark},
+  journal      = {CoRR},
+  volume       = {abs/1911.02549},
+  year         = {2019},
+  url          = {http://arxiv.org/abs/1911.02549},
+  eprinttype    = {arXiv},
+  eprint       = {1911.02549},
+  timestamp    = {Mon, 11 Nov 2019 18:38:09 +0100},
+  biburl       = {https://dblp.org/rec/journals/corr/abs-1911-02549.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+% MLPerf™ Training Reference Implementations
+% https://github.com/mlcommons/training
+
+@article{DBLP:journals/corr/abs-1910-01500,
+  author       = {Peter Mattson and
+                  Christine Cheng and
+                  Cody Coleman and
+                  Greg Diamos and
+                  Paulius Micikevicius and
+                  David A. Patterson and
+                  Hanlin Tang and
+                  Gu{-}Yeon Wei and
+                  Peter Bailis and
+                  Victor Bittorf and
+                  David Brooks and
+                  Dehao Chen and
+                  Debojyoti Dutta and
+                  Udit Gupta and
+                  Kim M. Hazelwood and
+                  Andrew Hock and
+                  Xinyuan Huang and
+                  Bill Jia and
+                  Daniel Kang and
+                  David Kanter and
+                  Naveen Kumar and
+                  Jeffery Liao and
+                  Guokai Ma and
+                  Deepak Narayanan and
+                  Tayo Oguntebi and
+                  Gennady Pekhimenko and
+                  Lillian Pentecost and
+                  Vijay Janapa Reddi and
+                  Taylor Robie and
+                  Tom St. John and
+                  Carole{-}Jean Wu and
+                  Lingjie Xu and
+                  Cliff Young and
+                  Matei Zaharia},
+  title        = {MLPerf Training Benchmark},
+  journal      = {CoRR},
+  volume       = {abs/1910.01500},
+  year         = {2019},
+  url          = {http://arxiv.org/abs/1910.01500},
+  eprinttype    = {arXiv},
+  eprint       = {1910.01500},
+  timestamp    = {Thu, 13 Apr 2023 19:55:40 +0200},
+  biburl       = {https://dblp.org/rec/journals/corr/abs-1910-01500.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+% MLPerf™ HPC reference implementations
+% https://github.com/mlcommons/hpc
+

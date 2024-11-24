@@ -1,0 +1,446 @@
+\begin{thebibliography}{10}
+
+\bibitem{alexey2020image}
+Dosovitskiy Alexey.
+\newblock An image is worth 16x16 words: Transformers for image recognition at scale.
+\newblock {\em arXiv preprint arXiv: 2010.11929}, 2020.
+
+\bibitem{TinyNAS}
+Alibaba.
+\newblock {TinyNAS}, May 2020.
+
+\bibitem{bhavya2021inter}
+B~Bhavya~Sree, V~Yashwanth~Bharadwaj, and N~Neelima.
+\newblock An inter-comparative survey on state-of-the-art detectors—r-cnn, yolo, and ssd.
+\newblock In {\em Intelligent Manufacturing and Energy Sustainability: Proceedings of ICIMES 2020}, pages 475--483. Springer, 2021.
+
+\bibitem{bochkovskiy2020yolov4}
+Alexey Bochkovskiy, Chien-Yao Wang, and Hong-Yuan~Mark Liao.
+\newblock Yolov4: Optimal speed and accuracy of object detection.
+\newblock {\em arXiv preprint arXiv:2004.10934}, 2020.
+
+\bibitem{bodla2017soft}
+Navaneeth Bodla, Bharat Singh, Rama Chellappa, and Larry~S Davis.
+\newblock Soft-nms--improving object detection with one line of code.
+\newblock In {\em Proceedings of the IEEE international conference on computer vision}, pages 5561--5569, 2017.
+
+\bibitem{buslaev2020albumentations}
+Alexander Buslaev, Vladimir~I Iglovikov, Eugene Khvedchenya, Alex Parinov, Mikhail Druzhinin, and Alexandr~A Kalinin.
+\newblock Albumentations: fast and flexible image augmentations.
+\newblock {\em Information}, 11(2):125, 2020.
+
+\bibitem{carion2020end}
+Nicolas Carion, Francisco Massa, Gabriel Synnaeve, Nicolas Usunier, Alexander Kirillov, and Sergey Zagoruyko.
+\newblock End-to-end object detection with transformers.
+\newblock In {\em European conference on computer vision}, pages 213--229. Springer, 2020.
+
+\bibitem{chen2017deeplab}
+Liang-Chieh Chen, George Papandreou, Iasonas Kokkinos, Kevin Murphy, and Alan~L Yuille.
+\newblock Deeplab: Semantic image segmentation with deep convolutional nets, atrous convolution, and fully connected crfs.
+\newblock {\em IEEE transactions on pattern analysis and machine intelligence}, 40(4):834--848, 2017.
+
+\bibitem{chu2024make}
+Xiangxiang Chu, Liang Li, and Bo~Zhang.
+\newblock Make repvgg greater again: A quantization-aware approach.
+\newblock In {\em Proceedings of the AAAI Conference on Artificial Intelligence}, volume~38, pages 11624--11632, 2024.
+
+\bibitem{dai2017deformable}
+Jifeng Dai, Haozhi Qi, Yuwen Xiong, Yi~Li, Guodong Zhang, Han Hu, and Yichen Wei.
+\newblock Deformable convolutional networks.
+\newblock In {\em Proceedings of the IEEE international conference on computer vision}, pages 764--773, 2017.
+
+\bibitem{ding2022re}
+Xiaohan Ding, Honghao Chen, Xiangyu Zhang, Kaiqi Huang, Jungong Han, and Guiguang Ding.
+\newblock Re-parameterizing your optimizers rather than architectures.
+\newblock {\em arXiv preprint arXiv:2205.15242}, 2022.
+
+\bibitem{ding2021repvgg}
+Xiaohan Ding, Xiangyu Zhang, Ningning Ma, Jungong Han, Guiguang Ding, and Jian Sun.
+\newblock Repvgg: Making vgg-style convnets great again.
+\newblock In {\em Proceedings of the IEEE/CVF conference on computer vision and pattern recognition}, pages 13733--13742, 2021.
+
+\bibitem{diwan2023object}
+Tausif Diwan, G~Anirudh, and Jitendra~V Tembhurne.
+\newblock Object detection using yolo: Challenges, architectural successors, datasets and applications.
+\newblock {\em multimedia Tools and Applications}, 82(6):9243--9275, 2023.
+
+\bibitem{duan2019centernet}
+Kaiwen Duan, Song Bai, Lingxi Xie, Honggang Qi, Qingming Huang, and Qi~Tian.
+\newblock Centernet: Keypoint triplets for object detection.
+\newblock In {\em Proceedings of the IEEE/CVF international conference on computer vision}, pages 6569--6578, 2019.
+
+\bibitem{everingham2010pascal}
+Mark Everingham, Luc Van~Gool, Christopher~KI Williams, John Winn, and Andrew Zisserman.
+\newblock The pascal visual object classes (voc) challenge.
+\newblock {\em International journal of computer vision}, 88:303--338, 2010.
+
+\bibitem{fang2021you}
+Yuxin Fang, Bencheng Liao, Xinggang Wang, Jiemin Fang, Jiyang Qi, Rui Wu, Jianwei Niu, and Wenyu Liu.
+\newblock You only look at one sequence: Rethinking transformer in vision through object detection.
+\newblock {\em Advances in Neural Information Processing Systems}, 34:26183--26197, 2021.
+
+\bibitem{feng2021tood}
+Chengjian Feng, Yujie Zhong, Yu~Gao, Matthew~R Scott, and Weilin Huang.
+\newblock Tood: Task-aligned one-stage object detection.
+\newblock In {\em 2021 IEEE/CVF International Conference on Computer Vision (ICCV)}, pages 3490--3499. IEEE Computer Society, 2021.
+
+\bibitem{ge2021yolox}
+Z~Ge.
+\newblock Yolox: Exceeding yolo series in 2021.
+\newblock {\em arXiv preprint arXiv:2107.08430}, 2021.
+
+\bibitem{ge2021ota}
+Zheng Ge, Songtao Liu, Zeming Li, Osamu Yoshie, and Jian Sun.
+\newblock Ota: Optimal transport assignment for object detection.
+\newblock In {\em Proceedings of the IEEE/CVF conference on computer vision and pattern recognition}, pages 303--312, 2021.
+
+\bibitem{gevorgyan2022siou}
+Zhora Gevorgyan.
+\newblock Siou loss: More powerful learning for bounding box regression.
+\newblock {\em arXiv preprint arXiv:2205.12740}, 2022.
+
+\bibitem{ghiasi2021simple}
+Golnaz Ghiasi, Yin Cui, Aravind Srinivas, Rui Qian, Tsung-Yi Lin, Ekin~D Cubuk, Quoc~V Le, and Barret Zoph.
+\newblock Simple copy-paste is a strong data augmentation method for instance segmentation.
+\newblock In {\em Proceedings of the IEEE/CVF conference on computer vision and pattern recognition}, pages 2918--2928, 2021.
+
+\bibitem{ghiasi2018dropblock}
+Golnaz Ghiasi, Tsung-Yi Lin, and Quoc~V Le.
+\newblock Dropblock: A regularization method for convolutional networks.
+\newblock {\em Advances in neural information processing systems}, 31, 2018.
+
+\bibitem{7410526}
+Ross Girshick.
+\newblock Fast r-cnn.
+\newblock In {\em 2015 IEEE International Conference on Computer Vision (ICCV)}, pages 1440--1448, 2015.
+
+\bibitem{guo2022msft}
+Zexuan Guo, Chensheng Wang, Guang Yang, Zeyuan Huang, and Guo Li.
+\newblock Msft-yolo: Improved yolov5 based on transformer for detecting defects of steel surface.
+\newblock {\em Sensors}, 22(9):3467, 2022.
+
+\bibitem{hariharan2015hypercolumns}
+Bharath Hariharan, Pablo Arbel{\'a}ez, Ross Girshick, and Jitendra Malik.
+\newblock Hypercolumns for object segmentation and fine-grained localization.
+\newblock In {\em Proceedings of the IEEE conference on computer vision and pattern recognition}, pages 447--456, 2015.
+
+\bibitem{he2015delving}
+Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun.
+\newblock Delving deep into rectifiers: Surpassing human-level performance on imagenet classification.
+\newblock In {\em Proceedings of the IEEE international conference on computer vision}, pages 1026--1034, 2015.
+
+\bibitem{he2015spatial}
+Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun.
+\newblock Spatial pyramid pooling in deep convolutional networks for visual recognition.
+\newblock {\em IEEE transactions on pattern analysis and machine intelligence}, 37(9):1904--1916, 2015.
+
+\bibitem{he2016deep}
+Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun.
+\newblock Deep residual learning for image recognition.
+\newblock In {\em Proceedings of the IEEE conference on computer vision and pattern recognition}, pages 770--778, 2016.
+
+\bibitem{hendrycks2016gaussian}
+Dan Hendrycks and Kevin Gimpel.
+\newblock Gaussian error linear units (gelus).
+\newblock {\em arXiv preprint arXiv:1606.08415}, 2016.
+
+\bibitem{huang2017densely}
+Gao Huang, Zhuang Liu, Laurens Van Der~Maaten, and Kilian~Q Weinberger.
+\newblock Densely connected convolutional networks.
+\newblock In {\em Proceedings of the IEEE conference on computer vision and pattern recognition}, pages 4700--4708, 2017.
+
+\bibitem{hussain2023yolo}
+Muhammad Hussain.
+\newblock Yolo-v1 to yolo-v8, the rise of yolo and its complementary nature toward digital manufacturing and industrial defect detection.
+\newblock {\em Machines}, 11(7):677, 2023.
+
+\bibitem{ioffe2015batch}
+Sergey Ioffe.
+\newblock Batch normalization: Accelerating deep network training by reducing internal covariate shift.
+\newblock {\em arXiv preprint arXiv:1502.03167}, 2015.
+
+\bibitem{islam2017label}
+Md~Amirul Islam, Shujon Naha, Mrigank Rochan, Neil Bruce, and Yang Wang.
+\newblock Label refinement network for coarse-to-fine semantic segmentation.
+\newblock {\em arXiv preprint arXiv:1703.00551}, 2017.
+
+\bibitem{jiang2022giraffedet}
+Yiqi Jiang, Zhiyu Tan, Junyan Wang, Xiuyu Sun, Ming Lin, and Hao Li.
+\newblock Giraffedet: A heavy-neck paradigm for object detection.
+\newblock {\em arXiv preprint arXiv:2202.04256}, 2022.
+
+\bibitem{Jocher_YOLOv5_by_Ultralytics_2020}
+Glenn Jocher.
+\newblock {YOLOv5 by Ultralytics}, May 2020.
+
+\bibitem{krasin2017openimages}
+Ivan Krasin, Tom Duerig, Neil Alldrin, Vittorio Ferrari, Sami Abu-El-Haija, Alina Kuznetsova, Hassan Rom, Jasper Uijlings, Stefan Popov, Andreas Veit, et~al.
+\newblock Openimages: A public dataset for large-scale multi-label and multi-class image classification.
+\newblock {\em Dataset available from https://github. com/openimages}, 2(3):18, 2017.
+
+\bibitem{law2018cornernet}
+Hei Law and Jia Deng.
+\newblock Cornernet: Detecting objects as paired keypoints.
+\newblock In {\em Proceedings of the European conference on computer vision (ECCV)}, pages 734--750, 2018.
+
+\bibitem{li2022yolov6}
+Chuyi Li, Lulu Li, Hongliang Jiang, Kaiheng Weng, Yifei Geng, Liang Li, Zaidan Ke, Qingyuan Li, Meng Cheng, Weiqiang Nie, et~al.
+\newblock Yolov6: A single-stage object detection framework for industrial applications.
+\newblock {\em arXiv preprint arXiv:2209.02976}, 2022.
+
+\bibitem{li2020generalized}
+Xiang Li, Wenhai Wang, Lijun Wu, Shuo Chen, Xiaolin Hu, Jun Li, Jinhui Tang, and Jian Yang.
+\newblock Generalized focal loss: Learning qualified and distributed bounding boxes for dense object detection.
+\newblock {\em Advances in Neural Information Processing Systems}, 33:21002--21012, 2020.
+
+\bibitem{lin2013network}
+M~Lin.
+\newblock Network in network.
+\newblock {\em arXiv preprint arXiv:1312.4400}, 2013.
+
+\bibitem{lin2017feature}
+Tsung-Yi Lin, Piotr Doll{\'a}r, Ross Girshick, Kaiming He, Bharath Hariharan, and Serge Belongie.
+\newblock Feature pyramid networks for object detection.
+\newblock In {\em Proceedings of the IEEE conference on computer vision and pattern recognition}, pages 2117--2125, 2017.
+
+\bibitem{8417976}
+Tsung-Yi Lin, Priya Goyal, Ross Girshick, Kaiming He, and Piotr Dollár.
+\newblock Focal loss for dense object detection.
+\newblock {\em IEEE Transactions on Pattern Analysis and Machine Intelligence}, 42(2):318--327, 2020.
+
+\bibitem{COCO}
+Tsung-Yi Lin, Michael Maire, Serge Belongie, James Hays, Pietro Perona, Deva Ramanan, Piotr Doll{\'a}r, and C~Lawrence Zitnick.
+\newblock Microsoft coco: Common objects in context.
+\newblock In {\em Computer Vision--ECCV 2014: 13th European Conference, Zurich, Switzerland, September 6-12, 2014, Proceedings, Part V 13}, pages 740--755. Springer, 2014.
+
+\bibitem{liu2018intriguing}
+Rosanne Liu, Joel Lehman, Piero Molino, Felipe Petroski~Such, Eric Frank, Alex Sergeev, and Jason Yosinski.
+\newblock An intriguing failing of convolutional neural networks and the coordconv solution.
+\newblock {\em Advances in neural information processing systems}, 31, 2018.
+
+\bibitem{liu2018path}
+Shu Liu, Lu~Qi, Haifang Qin, Jianping Shi, and Jiaya Jia.
+\newblock Path aggregation network for instance segmentation.
+\newblock In {\em Proceedings of the IEEE conference on computer vision and pattern recognition}, pages 8759--8768, 2018.
+
+\bibitem{liu2018receptive}
+Songtao Liu, Di~Huang, et~al.
+\newblock Receptive field block net for accurate and fast object detection.
+\newblock In {\em Proceedings of the European conference on computer vision (ECCV)}, pages 385--400, 2018.
+
+\bibitem{liu2022nrt}
+Yukuan Liu, Guanglin He, Zehu Wang, Weizhe Li, and Hongfei Huang.
+\newblock Nrt-yolo: Improved yolov5 based on nested residual transformer for tiny remote sensing object detection.
+\newblock {\em Sensors}, 22(13):4953, 2022.
+
+\bibitem{long2020pp}
+Xiang Long, Kaipeng Deng, Guanzhong Wang, Yang Zhang, Qingqing Dang, Yuan Gao, Hui Shen, Jianguo Ren, Shumin Han, Errui Ding, et~al.
+\newblock Pp-yolo: An effective and efficient implementation of object detector.
+\newblock {\em arXiv preprint arXiv:2007.12099}, 2020.
+
+\bibitem{loshchilov2016sgdr}
+Ilya Loshchilov and Frank Hutter.
+\newblock Sgdr: Stochastic gradient descent with warm restarts.
+\newblock {\em arXiv preprint arXiv:1608.03983}, 2016.
+
+\bibitem{ma2019paddlepaddle}
+Yanjun Ma, Dianhai Yu, Tian Wu, and Haifeng Wang.
+\newblock Paddlepaddle: An open-source deep learning platform from industrial practice.
+\newblock {\em Frontiers of Data and Domputing}, 1(1):105--115, 2019.
+
+\bibitem{maas2013rectifier}
+Andrew~L Maas, Awni~Y Hannun, Andrew~Y Ng, et~al.
+\newblock Rectifier nonlinearities improve neural network acoustic models.
+\newblock In {\em Proc. icml}, volume~30, page~3. Atlanta, GA, 2013.
+
+\bibitem{DBLP:journals/corr/abs-1910-01500}
+Peter Mattson, Christine Cheng, Cody Coleman, Greg Diamos, Paulius Micikevicius, David~A. Patterson, Hanlin Tang, Gu{-}Yeon Wei, Peter Bailis, Victor Bittorf, David Brooks, Dehao Chen, Debojyoti Dutta, Udit Gupta, Kim~M. Hazelwood, Andrew Hock, Xinyuan Huang, Bill Jia, Daniel Kang, David Kanter, Naveen Kumar, Jeffery Liao, Guokai Ma, Deepak Narayanan, Tayo Oguntebi, Gennady Pekhimenko, Lillian Pentecost, Vijay~Janapa Reddi, Taylor Robie, Tom~St. John, Carole{-}Jean Wu, Lingjie Xu, Cliff Young, and Matei Zaharia.
+\newblock Mlperf training benchmark.
+\newblock {\em CoRR}, abs/1910.01500, 2019.
+
+\bibitem{misra2019mish}
+Diganta Misra.
+\newblock Mish: A self regularized non-monotonic activation function.
+\newblock {\em arXiv preprint arXiv:1908.08681}, 2019.
+
+\bibitem{ouyang2022deyo}
+Haodong Ouyang.
+\newblock Deyo: Detr with yolo for step-by-step object detection.
+\newblock {\em arXiv preprint arXiv:2211.06588}, 2022.
+
+\bibitem{DBLP:journals/corr/abs-1911-02549}
+Vijay~Janapa Reddi, Christine Cheng, David Kanter, Peter Mattson, Guenther Schmuelling, Carole{-}Jean Wu, Brian Anderson, Maximilien Breughe, Mark Charlebois, William Chou, Ramesh Chukka, Cody Coleman, Sam Davis, Pan Deng, Greg Diamos, Jared Duke, Dave Fick, J.~Scott Gardner, Itay Hubara, Sachin Idgunji, Thomas~B. Jablin, Jeff Jiao, Tom~St. John, Pankaj Kanwar, David Lee, Jeffery Liao, Anton Lokhmotov, Francisco Massa, Peng Meng, Paulius Micikevicius, Colin Osborne, Gennady Pekhimenko, Arun Tejusve~Raghunath Rajan, Dilip Sequeira, Ashish Sirasao, Fei Sun, Hanlin Tang, Michael Thomson, Frank Wei, Ephrem Wu, Lingjie Xu, Koichi Yamada, Bing Yu, George Yuan, Aaron Zhong, Peizhao Zhang, and Yuchen Zhou.
+\newblock Mlperf inference benchmark.
+\newblock {\em CoRR}, abs/1911.02549, 2019.
+
+\bibitem{redmon2016you}
+J~Redmon.
+\newblock You only look once: Unified, real-time object detection.
+\newblock In {\em Proceedings of the IEEE conference on computer vision and pattern recognition}, 2016.
+
+\bibitem{redmon2018yolov3}
+Joseph Redmon.
+\newblock Yolov3: An incremental improvement.
+\newblock {\em arXiv preprint arXiv:1804.02767}, 2018.
+
+\bibitem{redmon2017yolo9000}
+Joseph Redmon and Ali Farhadi.
+\newblock Yolo9000: better, faster, stronger.
+\newblock In {\em Proceedings of the IEEE conference on computer vision and pattern recognition}, pages 7263--7271, 2017.
+
+\bibitem{faster_RCNN}
+Shaoqing Ren, Kaiming He, Ross Girshick, and Jian Sun.
+\newblock Faster r-cnn: towards real-time object detection with region proposal networks.
+\newblock In {\em Proceedings of the 28th International Conference on Neural Information Processing Systems - Volume 1}, NIPS'15, page 91–99, Cambridge, MA, USA, 2015. MIT Press.
+
+\bibitem{rezatofighi2019generalized}
+Hamid Rezatofighi, Nathan Tsoi, JunYoung Gwak, Amir Sadeghian, Ian Reid, and Silvio Savarese.
+\newblock Generalized intersection over union: A metric and a loss for bounding box regression.
+\newblock In {\em Proceedings of the IEEE/CVF conference on computer vision and pattern recognition}, pages 658--666, 2019.
+
+\bibitem{shao2019objects365}
+Shuai Shao, Zeming Li, Tianyuan Zhang, Chao Peng, Gang Yu, Xiangyu Zhang, Jing Li, and Jian Sun.
+\newblock Objects365: A large-scale, high-quality dataset for object detection.
+\newblock In {\em Proceedings of the IEEE/CVF international conference on computer vision}, pages 8430--8439, 2019.
+
+\bibitem{shu2021channel}
+Changyong Shu, Yifan Liu, Jianfei Gao, Zheng Yan, and Chunhua Shen.
+\newblock Channel-wise knowledge distillation for dense prediction.
+\newblock In {\em Proceedings of the IEEE/CVF International Conference on Computer Vision}, pages 5311--5320, 2021.
+
+\bibitem{song2020revisiting}
+Guanglu Song, Yu~Liu, and Xiaogang Wang.
+\newblock Revisiting the sibling head in object detector.
+\newblock In {\em Proceedings of the IEEE/CVF conference on computer vision and pattern recognition}, pages 11563--11572, 2020.
+
+\bibitem{srivastava2014dropout}
+Nitish Srivastava, Geoffrey Hinton, Alex Krizhevsky, Ilya Sutskever, and Ruslan Salakhutdinov.
+\newblock Dropout: a simple way to prevent neural networks from overfitting.
+\newblock {\em The journal of machine learning research}, 15(1):1929--1958, 2014.
+
+\bibitem{szegedy2015going}
+Christian Szegedy, Wei Liu, Yangqing Jia, Pierre Sermanet, Scott Reed, Dragomir Anguelov, Dumitru Erhan, Vincent Vanhoucke, and Andrew Rabinovich.
+\newblock Going deeper with convolutions.
+\newblock In {\em Proceedings of the IEEE conference on computer vision and pattern recognition}, pages 1--9, 2015.
+
+\bibitem{szegedy2016rethinking}
+Christian Szegedy, Vincent Vanhoucke, Sergey Ioffe, Jon Shlens, and Zbigniew Wojna.
+\newblock Rethinking the inception architecture for computer vision.
+\newblock In {\em Proceedings of the IEEE conference on computer vision and pattern recognition}, pages 2818--2826, 2016.
+
+\bibitem{tan2019efficientnet}
+Mingxing Tan and Quoc Le.
+\newblock Efficientnet: Rethinking model scaling for convolutional neural networks.
+\newblock In {\em International conference on machine learning}, pages 6105--6114. PMLR, 2019.
+
+\bibitem{9156454}
+Mingxing Tan, Ruoming Pang, and Quoc~V. Le.
+\newblock Efficientdet: Scalable and efficient object detection.
+\newblock In {\em 2020 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)}, pages 10778--10787, 2020.
+
+\bibitem{terven2023comprehensive}
+Juan Terven, Diana-Margarita C{\'o}rdova-Esparza, and Julio-Alejandro Romero-Gonz{\'a}lez.
+\newblock A comprehensive review of yolo architectures in computer vision: From yolov1 to yolov8 and yolo-nas.
+\newblock {\em Machine Learning and Knowledge Extraction}, 5(4):1680--1716, 2023.
+
+\bibitem{tian2019fcos}
+Z~Tian, C~Shen, H~Chen, and T~He.
+\newblock Fcos: Fully convolutional one-stage object detection. arxiv 2019.
+\newblock {\em arXiv preprint arXiv:1904.01355}, 2019.
+
+\bibitem{vaswani2017attention}
+A~Vaswani.
+\newblock Attention is all you need.
+\newblock {\em Advances in Neural Information Processing Systems}, 2017.
+
+\bibitem{wang2021scaled}
+Chien-Yao Wang, Alexey Bochkovskiy, and Hong-Yuan~Mark Liao.
+\newblock Scaled-yolov4: Scaling cross stage partial network.
+\newblock In {\em Proceedings of the IEEE/cvf conference on computer vision and pattern recognition}, pages 13029--13038, 2021.
+
+\bibitem{wang2023yolov7}
+Chien-Yao Wang, Alexey Bochkovskiy, and Hong-Yuan~Mark Liao.
+\newblock Yolov7: Trainable bag-of-freebies sets new state-of-the-art for real-time object detectors.
+\newblock In {\em Proceedings of the IEEE/CVF conference on computer vision and pattern recognition}, pages 7464--7475, 2023.
+
+\bibitem{wang2020cspnet}
+Chien-Yao Wang, Hong-Yuan~Mark Liao, Yueh-Hua Wu, Ping-Yang Chen, Jun-Wei Hsieh, and I-Hau Yeh.
+\newblock Cspnet: A new backbone that can enhance learning capability of cnn.
+\newblock In {\em Proceedings of the IEEE/CVF conference on computer vision and pattern recognition workshops}, pages 390--391, 2020.
+
+\bibitem{wang2022designing}
+Chien-Yao Wang, Hong-Yuan~Mark Liao, and I-Hau Yeh.
+\newblock Designing network design strategies through gradient path analysis.
+\newblock {\em arXiv preprint arXiv:2211.04800}, 2022.
+
+\bibitem{wang2021you}
+Chien-Yao Wang, I-Hau Yeh, and Hong-Yuan~Mark Liao.
+\newblock You only learn one representation: Unified network for multiple tasks.
+\newblock {\em arXiv preprint arXiv:2105.04206}, 2021.
+
+\bibitem{wang2022yolo}
+Simin Wang, Song Gao, Lun Zhou, Ruochen Liu, Hengsheng Zhang, Jiaming Liu, Yong Jia, and Jiang Qian.
+\newblock Yolo-sd: Small ship detection in sar images by multi-scale convolution and feature transformer module.
+\newblock {\em Remote Sensing}, 14(20):5268, 2022.
+
+\bibitem{wei2020hrsid}
+Shunjun Wei, Xiangfeng Zeng, Qizhe Qu, Mou Wang, Hao Su, and Jun Shi.
+\newblock Hrsid: A high-resolution sar images dataset for ship detection and instance segmentation.
+\newblock {\em Ieee Access}, 8:120234--120254, 2020.
+
+\bibitem{woo2018cbam}
+Sanghyun Woo, Jongchan Park, Joon-Young Lee, and In~So Kweon.
+\newblock Cbam: Convolutional block attention module.
+\newblock In {\em Proceedings of the European conference on computer vision (ECCV)}, pages 3--19, 2018.
+
+\bibitem{wu2020rethinking}
+Yue Wu, Yinpeng Chen, Lu~Yuan, Zicheng Liu, Lijuan Wang, Hongzhi Li, and Yun Fu.
+\newblock Rethinking classification and localization for object detection.
+\newblock In {\em Proceedings of the IEEE/CVF conference on computer vision and pattern recognition}, pages 10186--10195, 2020.
+
+\bibitem{xia2018dota}
+Gui-Song Xia, Xiang Bai, Jian Ding, Zhen Zhu, Serge Belongie, Jiebo Luo, Mihai Datcu, Marcello Pelillo, and Liangpei Zhang.
+\newblock Dota: A large-scale dataset for object detection in aerial images.
+\newblock In {\em Proceedings of the IEEE conference on computer vision and pattern recognition}, pages 3974--3983, 2018.
+
+\bibitem{xie2017aggregated}
+Saining Xie, Ross Girshick, Piotr Doll{\'a}r, Zhuowen Tu, and Kaiming He.
+\newblock Aggregated residual transformations for deep neural networks.
+\newblock In {\em Proceedings of the IEEE conference on computer vision and pattern recognition}, pages 1492--1500, 2017.
+
+\bibitem{xinlong2020solov2}
+Wang Xinlong, Zhang Rufeng, Kong Tao, Li~Lei, and Shen Chunhua.
+\newblock Solov2: Dynamic, faster and stronger.
+\newblock In {\em Proc. NIPS}, 2020.
+
+\bibitem{xu2022damo}
+Xianzhe Xu, Yiqi Jiang, Weihua Chen, Yilun Huang, Yuan Zhang, and Xiuyu Sun.
+\newblock Damo-yolo: A report on real-time object detection design.
+\newblock {\em arXiv preprint arXiv:2211.15444}, 2022.
+
+\bibitem{zhang2021varifocalnet}
+Haoyang Zhang, Ying Wang, Feras Dayoub, and Niko Sunderhauf.
+\newblock Varifocalnet: An iou-aware dense object detector.
+\newblock In {\em Proceedings of the IEEE/CVF conference on computer vision and pattern recognition}, pages 8514--8523, 2021.
+
+\bibitem{zhang2017mixup}
+Hongyi Zhang.
+\newblock mixup: Beyond empirical risk minimization.
+\newblock {\em arXiv preprint arXiv:1710.09412}, 2017.
+
+\bibitem{zhang2021vit}
+Zixiao Zhang, Xiaoqiang Lu, Guojin Cao, Yuting Yang, Licheng Jiao, and Fang Liu.
+\newblock Vit-yolo: Transformer-based yolo for object detection.
+\newblock In {\em Proceedings of the IEEE/CVF international conference on computer vision}, pages 2799--2808, 2021.
+
+\bibitem{zhao2019m2det}
+Qijie Zhao, Tao Sheng, Yongtao Wang, Zhi Tang, Ying Chen, Ling Cai, and Haibin Ling.
+\newblock M2det: A single-shot object detector based on multi-level feature pyramid network.
+\newblock In {\em Proceedings of the AAAI conference on artificial intelligence}, volume~33, pages 9259--9266, 2019.
+
+\bibitem{zheng2020distance}
+Zhaohui Zheng, Ping Wang, Wei Liu, Jinze Li, Rongguang Ye, and Dongwei Ren.
+\newblock Distance-iou loss: Faster and better learning for bounding box regression.
+\newblock In {\em Proceedings of the AAAI conference on artificial intelligence}, volume~34, pages 12993--13000, 2020.
+
+\end{thebibliography}

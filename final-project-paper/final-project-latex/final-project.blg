@@ -1,0 +1,55 @@
+This is BibTeX, Version 0.99d (TeX Live 2023)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: final-project.aux
+The style file: plain.bst
+Database file #1: references.bib
+Warning--entry type for "Jocher_YOLOv5_by_Ultralytics_2020" isn't style-file defined
+--line 777 of file references.bib
+Warning--entry type for "TinyNAS" isn't style-file defined
+--line 1004 of file references.bib
+Warning--can't use both volume and number fields in chu2024make
+Warning--can't use both volume and number fields in maas2013rectifier
+Warning--can't use both volume and number fields in zhao2019m2det
+Warning--can't use both volume and number fields in zheng2020distance
+You've used 89 entries,
+            2118 wiz_defined-function locations,
+            932 strings with 21793 characters,
+and the built_in function-call counts, 41833 in all, are:
+= -- 3959
+> -- 2592
+< -- 46
++ -- 1030
+- -- 936
+* -- 3099
+:= -- 6679
+add.period$ -- 272
+call.type$ -- 89
+change.case$ -- 730
+chr.to.int$ -- 0
+cite$ -- 93
+duplicate$ -- 1515
+empty$ -- 2793
+format.name$ -- 936
+if$ -- 8794
+int.to.chr$ -- 0
+int.to.str$ -- 89
+missing$ -- 87
+newline$ -- 446
+num.names$ -- 178
+pop$ -- 823
+preamble$ -- 1
+purify$ -- 641
+quote$ -- 0
+skip$ -- 1263
+stack$ -- 0
+substring$ -- 2378
+swap$ -- 578
+text.length$ -- 46
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 356
+warning$ -- 4
+while$ -- 325
+width$ -- 91
+write$ -- 964
+(There were 6 warnings)
