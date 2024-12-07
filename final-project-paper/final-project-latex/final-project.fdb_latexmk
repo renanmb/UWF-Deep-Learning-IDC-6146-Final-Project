@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex final-project"] 1732425673 "final-project.aux" "final-project.bbl" "final-project" 1732425716 0
+["bibtex final-project"] 1733550136 "final-project.aux" "final-project.bbl" "final-project" 1733550157 0
   "./references.bib" 1732407882 49792 b23b8d9c70a411e7cf0b2c9ee3714ba1 ""
   "c:/texlive/2023/texmf-dist/bibtex/bst/base/plain.bst" 1700418533 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "final-project.aux" 1732425715 13096 cb6fd647f7cdab547aef18cd431de094 "pdflatex"
+  "final-project.aux" 1733550156 13104 0cfb72b19226e56ddffc12e6667eaffc "pdflatex"
   (generated)
   "final-project.bbl"
   "final-project.blg"
   (rewritten before read)
-["pdflatex"] 1732425713 "e:/Bored Engineer Github/renanmb - Github/UWF-Deep-Learning-IDC-6146-Final-Project/final-project-paper/final-project-latex/final-project.tex" "final-project.pdf" "final-project" 1732425716 0
+["pdflatex"] 1733550155 "e:/Bored Engineer Github/renanmb - Github/UWF-Deep-Learning-IDC-6146-Final-Project/final-project-paper/final-project-latex/final-project.tex" "final-project.pdf" "final-project" 1733550157 0
   "c:/texlive/2023/texmf-dist/fonts/enc/dvips/base/8r.enc" 1700419458 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "c:/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1700418906 2971 def0b6c1f0b107b3b936def894055589 ""
   "c:/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1700419940 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -105,11 +105,11 @@
   "c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1700424209 4734881 9df31af74c23cb5b6845d6b52ecc54e5 ""
   "c:/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1700424345 8213664 3cc45ed2f110d8d9052d02c71d08c7b2 ""
   "c:/texlive/2023/texmf.cnf" 1700424187 713 e69b156964470283e0530f5060668171 ""
-  "e:/Bored Engineer Github/renanmb - Github/UWF-Deep-Learning-IDC-6146-Final-Project/final-project-paper/final-project-latex/final-project.tex" 1732425712 105942 b0d234c39c07a1b7d84be3bb00276085 ""
-  "final-project.aux" 1732425715 13096 cb6fd647f7cdab547aef18cd431de094 "pdflatex"
-  "final-project.bbl" 1732425674 23618 6136a9b4202108e0cd14acedfd119935 "bibtex final-project"
-  "final-project.out" 1732425715 8742 9e98bb378c41361546da6b906e571039 "pdflatex"
-  "final-project.tex" 1732425712 105942 b0d234c39c07a1b7d84be3bb00276085 ""
+  "e:/Bored Engineer Github/renanmb - Github/UWF-Deep-Learning-IDC-6146-Final-Project/final-project-paper/final-project-latex/final-project.tex" 1733550154 110116 bb1d8173606e310bb432b5640b94b852 ""
+  "final-project.aux" 1733550156 13104 0cfb72b19226e56ddffc12e6667eaffc "pdflatex"
+  "final-project.bbl" 1733550137 23618 6136a9b4202108e0cd14acedfd119935 "bibtex final-project"
+  "final-project.out" 1733550156 8742 9e98bb378c41361546da6b906e571039 "pdflatex"
+  "final-project.tex" 1733550154 110116 bb1d8173606e310bb432b5640b94b852 ""
   "neurips_2019.sty" 1590210028 11041 b7a48a6866976c357fe02da227ce45b4 ""
   (generated)
   "final-project.aux"

@@ -61,13 +61,7 @@
 
 
 \begin{abstract}
-    YOLO has become a central real-time object detection system for robotics, driverless cars, and video
-    monitoring applications. We present a comprehensive analysis of YOLO’s evolution, examining the
-    innovations and contributions in each iteration from the original YOLO up to YOLOv8, YOLO-NAS,
-    and YOLO with Transformers. We start by describing the standard metrics and postprocessing; then,
-    we discuss the major changes in network architecture and training tricks for each model. Finally, we
-    summarize the essential lessons from YOLO’s development and provide a perspective on its future,
-    highlighting potential research directions to enhance real-time object detection systems.
+    Computer Visions is a fundamental part in order to develop the ability to predict future outcomes given control actions is fundamental for understanding reasoning and eventually developing Embodied Intelligence. This study will explore how YOLO has become a central real-time object detection system for robotics. Then we will present a comprehensive analysis of YOLO’s evolution, examining the innovations and contributions in each iteration from the original YOLO with focus on YOLOv4. We will describe how lots of the concepts and insights developed with Yolo carried on towards more sophisticated methods using Transformers and beyond. We will discuss the major changes in network architecture and training tricks for each model using nvidia TAO toolkit. Finally, we summarize with evaluation of the model performance and how to make it run in production.
 \end{abstract}
 
 % #########################################################################################
@@ -78,7 +72,7 @@
 
 \section{Introduction}
 
-!!!! PLACE HOLDER !!!!
+% !!!! PLACE HOLDER !!!!
 
 Computer Vision is an essential part in embodied robotics and behavioral learning. In order to develop new multi-modal models necessary for embodied intelligence it has become clear that we need a holistic understanding of the YOLO and ViT framework’s evolution and its implications for object detection, segmentation and more.
 
@@ -92,14 +86,10 @@ This paper aims to provide a comprehensive review of the YOLO framework’s deve
 
 Each method presents unique tradeoffs between speed, accuracy, and complexity, catering to different application needs and computational constraints. These innovations are important to understand more modern architectures in special how YOLOv4 and later Vision models started to be described in three parts: Backbone, Neck, and Head
 
+% A comprehensive review of yolo architectures in computer vision \cite{terven2023comprehensive}
+Other great reviews include [\cite{bhavya2021inter}, \cite{diwan2023object}, \cite{hussain2023yolo}], and \cite{terven2023comprehensive}. However, these previous reviews as \cite{bhavya2021inter} only covers until YOLOv3, and \cite{diwan2023object} covers until YOLOv4 using outdated code that not only doesnt work in modern hardware, when it does it has performance issues and is unsuitable to production, the more recent review \cite{terven2023comprehensive} does a great job at covering all models in detail and it has references to useful codebases, but it is still not suitable for production and it cannot be implemented with Nvidia TAO as well it dont implement benchmarks such as MLperf and it doesnt focus on quantization and optimization techniques. 
 
-Other great reviews include [\cite{bhavya2021inter}, \cite{diwan2023object}, \cite{hussain2023yolo}]. However, the review from \cite{bhavya2021inter} covers until YOLOv3, and \cite{diwan2023object} covers until YOLOv4, leaving behind the most recent developments. Our paper, different from \cite{hussain2023yolo}, shows in-depth architectures for most YOLO architectures presented and covers other variations, such as YOLOX, PP-YOLOs, YOLO with transformers, and YOLO-NAS.
-
-A comprehensive review of yolo architectures in computer vision \cite{terven2023comprehensive}
-
-This work will focus on using development framework compatible with production deployments and it run evaluation likewise.
-
-Will run only the most important models like YOLOv4, scaled-YOLO, ....
+This work will focus on using development framework compatible with production deployments and it will run evaluation likewise.
 
 
 % ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣀⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀
@@ -210,6 +200,7 @@ Hardware and objectives
 
 Models should be evaluated to assess their performance, identify strengths and weaknesses, and this goes beyond whether or not they are accurate at prediction but also metrics to evaluate their performance like inference time, cost per inference, power consumption, and more ....
 
+For simplicity this study will focus on simpler image classification models which have well understood metrics and well established Datasets, they being COCO and KITTI (Autonomous Vehicle Dataset)
 
 % ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣀⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 % ⠀⠀⠀⠀⠀⠀⢀⣠⠤⠖⠈⠉⠉⠀⠀⠀⠀⠉⠢⡀⠀⠀⠀⠀⠀⠀
@@ -234,6 +225,8 @@ Models should be evaluated to assess their performance, identify strengths and w
 % #########################################################################################
 
 \section{MLPerf benchmark}
+
+This section Needs work
 
 Besides model prediction accuracy, it is also important to evaluate performance metrics like inference time, cost per inference, power consumption, and more ....
 
@@ -284,7 +277,7 @@ MLPerf HPC v3.0
 
 \section{Object Detection Metrics and Non-Maximum Suppression (NMS)}
 
-!!!! PLACE HOLDER !!!!
+% !!!! PLACE HOLDER !!!!
 
 The Average Precision (AP), traditionally called Mean Average Precision (mAP), is the commonly used metric for evaluating the performance of object detection models. It measures the average precision across all categories, providing a single value to compare different models. The COCO dataset makes no distinction between AP and mAP. In the rest of this paper, we will refer to this metric as AP.
 
@@ -309,7 +302,7 @@ In YOLOv1 and YOLOv2, the dataset utilized for training and benchmarking was PAS
 
 \subsection{How AP works?}
 
-!!!! PLACE HOLDER !!!!
+% !!!! PLACE HOLDER !!!!
 
 % The style files for NeurIPS and other conference information are available on the World Wide Web at  \url{http://www.neurips.cc/}. The file \verb+neurips_2019.pdf+ contains these instructions and illustrates the various formatting requirements your NeurIPS paper must satisfy.
 
@@ -323,14 +316,15 @@ The AP metric is based on precision-recall metrics, handling multiple object cat
 
 \textbf{Intersection over Union:} Object detection aims to accurately localize objects in images by predicting bounding boxes. The AP metric incorporates the Intersection over Union (IoU) measure to assess the quality of the predicted bounding boxes. IoU is the ratio of the intersection area to the union area of the predicted bounding box and the ground truth bounding box (see Figure 3). It measures the overlap between the ground truth and predicted bounding boxes. The COCO benchmark considers multiple IoU thresholds to evaluate the model’s performance at different levels of localization accuracy.
 
-ADD some images here to show the Intersection over Union
+
+Need to ADD some images here to show the Intersection over Union
 
 
 \subsection{Computing AP}
 
-!!!! PLACE HOLDER !!!!
+% !!!! PLACE HOLDER !!!!
 
-Microsoft COCO Dataset
+\textbf{Microsoft COCO Dataset}
 
 This dataset includes 80 object categories and uses a more complex method for calculating AP. Instead of using an 11-point interpolation, it uses a 101-point interpolation, i.e., it computes the precision for 101 recall thresholds from 0 to 1 in increments of 0.01. Also, the AP is obtained by averaging over multiple IoU values instead of just one, except for a common AP metric called AP50, which is the AP for a single IoU threshold of 0.5. The steps for computing AP in COCO are the following:
 
@@ -344,6 +338,9 @@ This dataset includes 80 object categories and uses a more complex method for ca
 
 The differences in AP calculation make it hard to directly compare the performance of object detection models across the two datasets. The current standard uses the COCO AP due to its more fine-grained evaluation of how well a model performs at different IoU thresholds.
 
+\textbf{KITTI Dataset}
+
+The KITTI dataset is a widely used collection of data for research in autonomous driving and computer vision. It was created by the Karlsruhe Institute of Technology and Toyota Technological Institute, containing real-world driving scenes recorded with a variety of sensors, including high-resolution color cameras, LIDAR, and GPS/IMU systems. The dataset includes several benchmark tasks such as stereo vision, optical flow, visual odometry, 3D object detection, and semantic segmentation. KITTI provides both the raw sensor data (images, point clouds, and GPS/IMU information) and ground truth annotations, making it a valuable resource for developing and evaluating algorithms for autonomous navigation and perception in dynamic environments.
 
 \subsection{Non-Maximum Suppression (NMS)}
 
@@ -400,13 +397,15 @@ The YOLO (You Only Look Once) framework has been a massive step forward in compu
 
 \section{YOLO: You Only Look Once}
 
-!!!! PLACE HOLDER !!!!
+% !!!! PLACE HOLDER !!!!
 
 YOLO by Joseph Redmon et al. was published in CVPR 2016 \cite{redmon2016you}. It presented for the first time a real-time end-to-end approach for object detection. The name YOLO stands for "You Only Look Once," referring to the fact that it was able to accomplish the detection task with a single pass of the network, as opposed to previous approaches that either used sliding windows followed by a classifier that needed to run hundreds or thousands of times per image or the more advanced methods that divided the task into two-steps, where the first step detects possible regions with objects or regions proposals and the second step run a classifier on the proposals. Also, YOLO used a more straightforward output based only on regression to predict the detection outputs as opposed to Fast R-CNN \cite{7410526} that used two separate outputs, a classification for the probabilities and a regression for the boxes coordinates.
 
+We will be doing a brief introduction to the main YOLO architectures up to YOLOv4 where we will do a more in depth review with code implementation as the YOLOv4 is a junction point that introduces concepts that carry on.
+
 \subsection{YOLOv1 Architecture}
 
-!!!! PLACE HOLDER !!!!
+% !!!! PLACE HOLDER !!!!
 
 YOLOv1 architecture comprises 24 convolutional layers followed by two fully-connected layers that predict the bounding box coordinates and probabilities. All layers used leaky rectified linear unit activations \cite{maas2013rectifier} except for the last one that used a linear activation function. Inspired by GoogLeNet \cite{szegedy2015going} and Network in Network \cite{lin2013network}, YOLO uses 1 × 1 convolutional layers to reduce the number of feature maps and keep the number of parameters relatively low. As activation layers, Table 1 describes the YOLOv1 architecture. The authors also introduced a lighter model called Fast YOLO, composed of nine convolutional layers.
 
@@ -438,7 +437,7 @@ Figure 3: The Architecture. Our detection network has 24 convolutional layers fo
 
 \section{YOLOv2: Better, Faster, and Stronger}
 
-!!!! PLACE HOLDER !!!!
+% !!!! PLACE HOLDER !!!!
 
 YOLOv2 was published in CVPR 2017 \cite{redmon2017yolo9000} by Joseph Redmon and Ali Farhadi. It included several improvements over the original YOLO, to make it better, keeping the same speed and also stronger —capable of detecting 9000 categories!—. The improvements were the following:
 
@@ -459,7 +458,7 @@ With all these improvements, YOLOv2 achieved an average precision (AP) of 78.6 o
 
 \subsection{YOLOv2 Architecture}
 
-!!!! PLACE HOLDER !!!!
+% !!!! PLACE HOLDER !!!!
 
 
 The backbone architecture used by YOLOv2 is called Darknet-19, containing 19 convolutional layers and five maxpooling layers. Similar to the architecture of YOLOv1, it is inspired in the Network in Network \cite{lin2013network} using 1 × 1 convolutions between the 3 × 3 to reduce the number of parameters. In addition, as mentioned above, they use batch normalization to regularize and help convergence.
@@ -496,7 +495,7 @@ The authors introduced a method for training joint classification and detection 
 
 \section{YOLOv3}
 
-!!!! PLACE HOLDER !!!!
+% !!!! PLACE HOLDER !!!!
 
 
 YOLOv3 \cite{redmon2018yolov3} was published in ArXiv in 2018 by Joseph Redmon and Ali Farhadi. It included significant changes and a bigger architecture to be on par with the state-of-the-art while keeping real-time performance. In the following, we described the changes with respect to YOLOv2.
@@ -541,9 +540,9 @@ The Darknet-53 backbone obtains Top-1 and Top-5 accuracies comparable with ResNe
 
 \section{Backbone, Neck, and Head}
 
-This section is important to describe how the concepts learned in YOLO and how Backbone, Neck and Head concepts will later apply into VITs going towards DINOv2 and other foundational visual models.
+The concepts of Backbone, Neck and Head are important to understand how the advancements learned in YOLO will later apply into VITs going towards DINOv2 and other foundational visual models that give origin to World Models which are of extreme importance to implement embodied intelligence.
 
-!!!! PLACE HOLDER !!!!
+% !!!! PLACE HOLDER !!!!
 
 At this time, the architecture of object detectors started to be described in three parts: the backbone, the neck, and the head. Figure 11 shows a high-level backbone, neck, and head diagram.
 
@@ -579,7 +578,7 @@ In the rest of the YOLO models, we will describe the architectures using the bac
 
 \section{YOLOv4}
 
-!!!! PLACE HOLDER !!!!
+% !!!! PLACE HOLDER !!!!
 
 Two years passed, and there was no new version of YOLO. It was until April 2020 that Alexey Bochkovskiy, Chien-Yao Wang, and Hong-Yuan Mark Liao released in ArXiv the paper for YOLOv4 \cite{bochkovskiy2020yolov4}. At first, it felt odd that different authors presented a new "official" version of YOLO; however, YOLOv4 kept the same YOLO philosophy —real-time, open source, single shot, and darknet framework— and the improvements were so satisfactory that the community rapidly embrace this version as the official YOLOv4.
 
@@ -600,13 +599,13 @@ FPS on an NVIDIA V100.
 
 \subsection{YOLOv4 Architecture}
 
-!!!! PLACE HOLDER !!!!
+% !!!! PLACE HOLDER !!!!
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 \subsection{YOLOv4 Performance Evaluation}
 
-!!!! PLACE HOLDER !!!!
+% !!!! PLACE HOLDER !!!!
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
@@ -640,7 +639,7 @@ YOLOv5 \cite{Jocher_YOLOv5_by_Ultralytics_2020} was released a couple of months 
 
 \subsection{YOLOv5 Architecture}
 
-!!!! PLACE HOLDER !!!!
+% !!!! PLACE HOLDER !!!!
 
 The backbone is a modified CSPDarknet53 that starts with a Stem, a strided convolution layer with a large window size to reduce memory and computational costs; followed by convolutional layers that extract relevant features from the input image. The SPPF (spatial pyramid pooling fast) layer and the following convolution layers process the features at various scales, while the upsample layers increase the resolution of the feature maps. The SPPF layer aims to speed up the computation of the network by pooling features of different scales into a fixed-size feature map. Each convolution is followed by batch normalization (BN) and SiLU activation \cite{hendrycks2016gaussian}. The neck uses SPPF and a modified CSP-PAN, while the head resembles YOLOv3.
 
@@ -656,7 +655,7 @@ Evaluated on MS COCO dataset test-dev 2017, YOLOv5x achieved an AP of 50.7 with 
 
 \subsection{YOLOv5 Performance Evaluation}
 
-!!!! PLACE HOLDER !!!!
+% !!!! PLACE HOLDER !!!!
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
@@ -684,7 +683,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor inci
 
 \section{Scaled-YOLOv4}
 
-!!!! PLACE HOLDER !!!!
+% !!!! PLACE HOLDER !!!!
 
 One year after YOLOv4, the same authors presented Scaled-YOLOv4 \cite{wang2021scaled} in CVPR 2021. Differently from YOLOv4, Scaled YOLOv4 was developed in Pytorch instead of Darknet. The main novelty was the introduction of scaling-up and scaling-down techniques. Scaling up means producing a model that increases accuracy at the expense of a lower speed; on the other hand, scaling down entails producing a model that increases speed sacrificing accuracy. In addition, scaled-down models need less computing power and can run on embedded systems.
 
@@ -694,13 +693,13 @@ The scaled-up model architecture was called YOLOv4-large, which included three d
 
 \subsection{Scaled-YOLOv4 Architecture}
 
-!!!! PLACE HOLDER !!!!
+% !!!! PLACE HOLDER !!!!
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 \subsection{Scaled-YOLOv4 Performance Evaluation}
 
-!!!! PLACE HOLDER !!!!
+% !!!! PLACE HOLDER !!!!
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
@@ -728,7 +727,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor inci
 
 \section{YOLOR}
 
-!!!! PLACE HOLDER !!!!
+% !!!! PLACE HOLDER !!!!
 
 
 YOLOR \cite{wang2021you} was published in ArXiv in May 2021 by the same research team of YOLOv4. YOLOR stands for \textbf{You Only Learn One Representation}. In this paper, the authors followed a different approach; they developed a multi-task learning approach that aims to create a single model for various tasks (e.g., classification, detection, pose estimation) by learning a general representation and using sub-networks to create task-specific representations. With the insight that the traditional joint learning method often leads to suboptimal feature generation, YOLOR aims to overcome this by encoding the implicit knowledge of neural networks to be applied to multiple tasks, similar to how humans use past experiences to approach new problems. The results showed that introducing implicit knowledge into the neural network benefits all the tasks.
@@ -737,13 +736,13 @@ Evaluated on MS COCO dataset test-dev 2017, YOLOR achieved a AP of 55.4 and AP50
 
 \subsection{YOLOR Architecture}
 
-!!!! PLACE HOLDER !!!!
+% !!!! PLACE HOLDER !!!!
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 \subsection{YOLOR Performance Evaluation}
 
-!!!! PLACE HOLDER !!!!
+% !!!! PLACE HOLDER !!!!
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
@@ -771,7 +770,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor inci
 
 \section{YOLOX}
 
-!!!! PLACE HOLDER !!!!
+% !!!! PLACE HOLDER !!!!
 
 
 YOLOX \cite{ge2021yolox} was published in ArXiv in July 2021 by Megvii Technology. Developed in Pytorch and using YOLOV3 from Ultralytics as starting point, it has five principal changes: an anchor-free architecture, multiple positives, a decoupled head, advanced label assignment, and strong augmentations. It achieved state-of-the-art results in 2021 with an optimal balance between speed and accuracy with 50.1 AP at 68.9 FPS on Tesla V100. In the following, we describe the five main changes of YOLOX with respect to YOLOv3:
@@ -788,13 +787,13 @@ YOLOX \cite{ge2021yolox} was published in ArXiv in July 2021 by Megvii Technolog
 
 \subsection{YOLOX Architecture}
 
-!!!! PLACE HOLDER !!!!
+% !!!! PLACE HOLDER !!!!
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 \subsection{YOLOX Performance Evaluation}
 
-!!!! PLACE HOLDER !!!!
+% !!!! PLACE HOLDER !!!!
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
@@ -822,7 +821,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor inci
 
 \section{YOLOv6}
 
-!!!! PLACE HOLDER !!!!
+% !!!! PLACE HOLDER !!!!
 
 YOLOv6 \cite{li2022yolov6} was published in ArXiv in September 2022 by Meituan Vision AI Department. The network design consists of an efficient backbone with RepVGG or CSPStackRep blocks, a PAN topology neck, and an efficient decoupled head with a hybrid-channel strategy. In addition, the paper introduces enhanced quantization techniques using post-training quantization and channel-wise distillation, resulting in faster and more accurate detectors. Overall, YOLOv6 outperforms previous state-of-the-art models on accuracy and speed metrics, such as YOLOv5, YOLOX, and PP-YOLOE.
 
@@ -843,13 +842,13 @@ The authors provide eight scaled models, from YOLOv6-N to YOLOv6-L6. Evaluated o
 
 \subsection{YOLOv6 Architecture}
 
-!!!! PLACE HOLDER !!!!
+% !!!! PLACE HOLDER !!!!
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 \subsection{YOLOv6 Performance Evaluation}
 
-!!!! PLACE HOLDER !!!!
+% !!!! PLACE HOLDER !!!!
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
@@ -877,7 +876,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor inci
 
 \section{YOLOv7}
 
-!!!! PLACE HOLDER !!!!
+% !!!! PLACE HOLDER !!!!
 
 
 YOLOv7 \cite{wang2023yolov7} was published in ArXiv in July 2022 by the same authors of YOLOv4 and YOLOR. At the time, it surpassed all known object detectors in speed and accuracy in the range of 5 FPS to 160 FPS. Like YOLOv4, it was trained using only the MS COCO dataset without pre-trained backbones. YOLOv7 proposed a couple of architecture changes and a series of bag-of-freebies, which increased the accuracy without affecting the inference speed, only the training time.
@@ -918,13 +917,13 @@ Evaluated on MS COCO dataset test-dev 2017, YOLOv7-E6 achieved an AP of 55.9 and
 
 \subsection{YOLOv7 Architecture}
 
-!!!! PLACE HOLDER !!!!
+% !!!! PLACE HOLDER !!!!
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 \subsection{YOLOv7 Performance Evaluation}
 
-!!!! PLACE HOLDER !!!!
+% !!!! PLACE HOLDER !!!!
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
@@ -952,7 +951,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor inci
 
 \section{DAMO-YOLO}
 
-!!!! PLACE HOLDER !!!!
+% !!!! PLACE HOLDER !!!!
 
 The MAE-NAS citation for the TinyNAS from Alibaba needs fixing.
 
@@ -993,7 +992,7 @@ The authors generated scaled models named DAMO-YOLO-Tiny/Small/Medium, with the 
 
 \section{YOLOv8}
 
-!!!! PLACE HOLDER !!!!
+% !!!! PLACE HOLDER !!!!
 
 Need to create a citation for the ultralytics github repo, however it is crashing bibtex
 
@@ -1037,7 +1036,7 @@ Evaluated on MS COCO dataset test-dev 2017, YOLOv8x achieved an AP of 53.9 with 
 
 \section{PP-YOLO, PP-YOLOv2, and PP-YOLOE}
 
-!!!! PLACE HOLDER !!!!
+% !!!! PLACE HOLDER !!!!
 
 
 PP-YOLO models have been growing parallel to the YOLO models we described. However, we decided to group them in a single section because they began with YOLOv3 and had been gradually improving upon the previous PP-YOLO version. Nevertheless, these models have been influential in the evolution of YOLO. PP-YOLO \cite{long2020pp} similar to YOLOv4 and YOLOv5 was based on YOLOv3. It was published in ArXiv in July 2020 by researchers from Baidu Inc. The authors used the PaddlePaddle \cite{ma2019paddlepaddle} deep learning platform, hence its PP name. Following the trend we have seen starting with YOLOv4, PP-YOLO added ten existing tricks to improve the detector’s accuracy, keeping the speed unchanged. According to the authors, this paper was not intended to introduce a novel object detector but to show how to build a better detector step by step. Most of the tricks PP-YOLO uses are different from the ones used in YOLOv4, and the ones that overlap use a different implementation. The changes of PP-YOLO concerning YOLOv3 are:
@@ -1059,14 +1058,14 @@ PP-YOLO models have been growing parallel to the YOLO models we described. Howev
 
 \subsection{PP-YOLO augmentations and preprocessing}
 
-!!!! PLACE HOLDER !!!!
+% !!!! PLACE HOLDER !!!!
 
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 \subsection{PP-YOLOv2}
 
-!!!! PLACE HOLDER !!!!
+% !!!! PLACE HOLDER !!!!
 
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -1074,7 +1073,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor inci
 
 \subsection{PP-YOLOE}
 
-!!!! PLACE HOLDER !!!!
+% !!!! PLACE HOLDER !!!!
 
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -1105,9 +1104,9 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor inci
 
 \section{YOLO-NAS}
 
-!!!! PLACE HOLDER !!!!
+% !!!! PLACE HOLDER !!!!
 
-Need to figure out how to cite the YOLO-NAS
+% Need to figure out how to cite the YOLO-NAS
 
 YOLO-NAS [124] was released in May 2023 by Deci, a company that develops production-grade models and tools to build, optimize, and deploy deep learning models. YOLO-NAS is designed to detect small objects, improve localization accuracy, and enhance the performance-per-compute ratio, making it suitable for real-time edge-device applications. In addition, its open-source architecture is available for research use.
 
@@ -1152,8 +1151,9 @@ At this writing, three YOLO-NAS models have been released in FP32, FP16, and INT
 
 \section{YOLO with Transformers}
 
-!!!! PLACE HOLDER !!!!
+% !!!! PLACE HOLDER !!!!
 
+This section is questionable as there are so many divergent studies implementing YOLO like models with transformers.
 
 With the rise of the Transformer \cite{vaswani2017attention} taking over most Deep Learning tasks from Language and Audio Processing to Vision, it was natural for Transformers and YOLO to be combined. One of the first attempts at using transformers for object detection was You Only Look at One Sequence or YOLOS \cite{fang2021you}, turned a pre-trained Vision Transfomer (ViT) \cite{alexey2020image} from image classification to object detection, achieving 42.0 AP on MS COCO dataset. The changes made to ViT were two: 1) replace one [CLS] token used in classification with one hundred [DET] tokens for detection, and 2) replace the image classification loss in ViT with a bipartite matching loss similar to the End-to-end object detection with transformers \cite{carion2020end}.
 
@@ -1192,7 +1192,13 @@ Another interesting attempt to combine YOLO with detection transformer (DETR) \c
 
 \section{Discussions}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+The YOLO models have significantly influenced the field of computer vision. The clever architecture is its core strength, it allows it to simultaneously predict the location and classification of objects in an image, making it extremely. This end-to-end approach allowed YOLO models to process images in a single forward pass, enabling real-time applications such as autonomous driving, surveillance, and robotics. The innovation behind YOLO's speed and efficiency has made it a foundational piece towards multi-modal computer vision systems.
+
+% In the context of predicting future outcomes based on control actions, the YOLO models contribute in several meaningful ways. First, their real-time performance provides an essential building block for applications where immediate feedback from the environment is needed to make predictions. For example, in autonomous vehicles, detecting and tracking moving objects using YOLO can feed into a predictive model that anticipates the movements of pedestrians or other vehicles. By incorporating such real-time detection with reinforcement learning (RL) or other control algorithms, computer vision systems can make predictions about future states, adjusting actions dynamically to optimize for safety or efficiency.
+
+% Moreover, YOLO models are increasingly integrated into more complex systems that go beyond just detection, extending to tasks like tracking, multi-object interactions, and event prediction. When combined with methods such as recurrent neural networks (RNNs) or deep reinforcement learning (DRL), YOLO can be employed not just to understand the current state of the environment, but to model and predict future states based on past interactions and control actions. For instance, by observing the motion of objects over time and predicting future trajectories, YOLO can help systems plan control actions that steer future outcomes in desired directions, improving decision-making capabilities. This interaction between real-time detection and prediction is a crucial step in enabling autonomous systems to not only perceive their environment but also anticipate and act upon it, leading to advancements in areas like robotics, autonomous vehicles, and smart cities.
+
+In summary, YOLO models, with their real-time detection capability, inspired the backbone (pun intended) of modern computer vision systems aimed at predicting and controlling future outcomes. As these models continue to evolve, their integration with predictive models and control frameworks will be key to the advancement of intelligent systems that can both understand and predict dynamic environments, ultimately pushing the boundaries of what autonomous systems can achieve.
 
 % ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣀⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 % ⠀⠀⠀⠀⠀⠀⢀⣠⠤⠖⠈⠉⠉⠀⠀⠀⠀⠉⠢⡀⠀⠀⠀⠀⠀⠀
