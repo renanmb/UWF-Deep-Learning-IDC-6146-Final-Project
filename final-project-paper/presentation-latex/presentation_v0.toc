@@ -1,0 +1,11 @@
+\beamer@sectionintoc {1}{Advances in Computer Vision}{2}{0}{1}
+\beamer@sectionintoc {2}{Real World Data is Imperfect}{3}{0}{2}
+\beamer@sectionintoc {3}{Introduction}{4}{0}{3}
+\beamer@sectionintoc {4}{YOLO: You Only Look Once}{5}{0}{4}
+\beamer@sectionintoc {5}{YOLO Architecture}{6}{0}{5}
+\beamer@sectionintoc {6}{The Evolution of YOLO}{7}{0}{6}
+\beamer@sectionintoc {7}{The Rise of Transformers in CV}{8}{0}{7}
+\beamer@sectionintoc {8}{Vision Transformer (ViT)}{9}{0}{8}
+\beamer@sectionintoc {9}{Comparing YOLO and ViT}{11}{0}{9}
+\beamer@sectionintoc {10}{Applications and Future Directions}{12}{0}{10}
+\beamer@sectionintoc {11}{Conclusion}{13}{0}{11}
